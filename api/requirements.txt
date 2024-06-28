@@ -1,0 +1,14 @@
+python-whois
+openai
+python-dotenv
+json5
+fastapi
+uvicorn
+pandas
+beautifulsoup4
+urllib3
+requests
+requests-file
+tldextract
+qwen-agent
+# langchain
