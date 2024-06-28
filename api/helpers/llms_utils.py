@@ -24,7 +24,7 @@ class LLMSUtils:
         self.model = model or os.getenv("TEXT_MODEL")
         openai.api_key = os.getenv("OPENAI_API_KEY")
 
-    def call_qwen(self, messages, functions=None):
+    def call_qwen(self, messages, functions=None, retries=3):
         llm = get_chat_model({
             'model': self.model,
             'model_server': self.base_url,
@@ -44,11 +44,14 @@ class LLMSUtils:
         if response.get('function_call', None):
             function_args = json5.loads(response['function_call']['arguments'])
             return response, function_args
-        else:
+        elif retries > 0:
             print("response is not a function call, retrying...")
-            return self.call_qwen(messages, functions)
+            return self.call_qwen(messages, functions, retries - 1)
+        else:
+            raise Exception(
+                "Failed to get a valid function call response after 3 retries")
 
-    def send_function_chat_completion(self, prompt, functions):
+    def send_function_chat_completion(self, prompt, functions, retries=3):
         """
         Send a function chat completion to OpenAI
         """
@@ -56,11 +59,16 @@ class LLMSUtils:
             {"role": "user", "content": prompt}
         ]
         try:
-            response, function_args = self.call_qwen(messages, functions)
+            response, function_args = self.call_qwen(
+                messages, functions, retries)
             print("domains generation-----------", response)
 
             return response, function_args
-        except Exception:
-            print("domains generation failed in send_function_chat_completion, retrying...")
-            # re-call the function 3 times if the response is not a function call
-            return self.send_function_chat_completion(prompt, functions)
+        except Exception as e:
+            if retries > 0:
+                print(
+                    f"domains generation failed in send_function_chat_completion, retrying... ({retries} retries left)")
+                return self.send_function_chat_completion(prompt, functions, retries - 1)
+            else:
+                print("domains generation failed after 3 retries")
+                raise e

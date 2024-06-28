@@ -85,6 +85,7 @@ async def generate_domains(request: GenerateDomainsRequest):
         keywords=request.keywords,
         style=request.style,
         number_of_domains=request.number_of_domains,
+        reviewed_domains=request.reviewed_domains,
         description=request.description,
         min_domain_length=request.min_domain_length,
         max_domain_length=request.max_domain_length,

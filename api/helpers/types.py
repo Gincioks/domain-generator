@@ -6,12 +6,14 @@ load_dotenv()
 
 models_names = get_models_names()
 
+
 class CreateModelRequest(BaseModel):
     model: str = Field(
         default_factory=lambda: models_names[0],
         example=models_names[0],
         enum=models_names
     )
+
 
 class PullLLMRequest(BaseModel):
     model: str = Field(
@@ -45,6 +47,10 @@ class GenerateDomainsRequest(BaseModel):
     number_of_domains: int = Field(
         default=10,
         example=10
+    )
+    reviewed_domains: list[str] = Field(
+        default=None,
+        example=[]
     )
     min_domain_length: int = Field(
         default=None,

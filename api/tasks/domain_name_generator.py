@@ -14,8 +14,8 @@ class DomainNameGenerator:
     Generates domain names based on given criteria and checks their availability.
     """
 
-    def __init__(self, base_url=None, model=None, keywords=None, style=None, number_of_domains=10, 
-                 description=None, domains_history=None, min_domain_length=None,
+    def __init__(self, base_url=None, model=None, keywords=None, style=None, number_of_domains=10,
+                 description=None, domains_history=None, min_domain_length=None, reviewed_domains=None,
                  max_domain_length=None, included_words=None, tlds=None):
         print(f"Model: {model}")
         self.keywords = keywords if keywords else []
@@ -23,6 +23,7 @@ class DomainNameGenerator:
         self.number_of_domains = number_of_domains
         self.description = description
         self.domains_history = domains_history
+        self.reviewed_domains = reviewed_domains
         self.min_domain_length = min_domain_length
         self.max_domain_length = max_domain_length
         self.included_words = included_words if included_words else []
@@ -37,7 +38,7 @@ class DomainNameGenerator:
         Generates a list of domain names that fit the given criteria.
         """
         # prompt = f'Suggest at least {self.number_of_domains} domain names that fit the following criteria:\n'
-        prompt = 'Please suggest at least 10 domain names that fit the following criteria:\n'
+        prompt = 'Suggest at least 10 domain names that fit the following criteria:\n'
         prompt += f'For a business doing: ###{self.description}###' if self.description else ""
         prompt += (f'With these keywords: ###{", ".join(self.keywords)}###'
                    if self.keywords else "")
@@ -50,6 +51,7 @@ class DomainNameGenerator:
         prompt += (f'Include the following words: {", ".join(self.included_words)}'
                    if self.included_words else "")
         prompt += f'Consider these tlds: {", ".join(self.tlds)}' if self.tlds else ""
+        prompt += f'Do not suggest these domains: {", ".join(self.reviewed_domains)}' if self.reviewed_domains else ""
 
         functions = [
             {
