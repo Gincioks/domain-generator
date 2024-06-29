@@ -47,7 +47,7 @@ const App: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-indigo-400 flex items-center justify-center">
-      <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-2xl">
+      <div className={`bg-white rounded-lg shadow-lg p-8 w-full ${currentStep === "generating" ? "animate-fadeIn" : ""} ${currentStep === "results" ? "animate-fadeOut max-w-8xl" : " max-w-2xl"}`}>
         {currentStep !== "generating" && currentStep !== "results" && (
           <Navbar currentStep={currentStep} onStepChange={handleStepChange} />
         )}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FiSearch, FiStar, FiGlobe } from 'react-icons/fi';
 
 interface DomainResult {
     domain_name: string;
@@ -31,13 +32,11 @@ interface ResultsPageProps {
 
 const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
     const [selectedDomain, setSelectedDomain] = useState<DomainResult | null>(null);
-    const [generatedLogo, setGeneratedLogo] = useState<string | null>(null);
+    const [searchTerm, setSearchTerm] = useState('');
 
-    const generateLogo = async (description: string) => {
-        setGeneratedLogo(null);
-        await new Promise(resolve => setTimeout(resolve, 1500));
-        setGeneratedLogo(`https://via.placeholder.com/150?text=${encodeURIComponent(description.slice(0, 10))}`);
-    };
+    const filteredResults = results.filter(result =>
+        result.domain_name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
 
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -58,38 +57,69 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
     };
 
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="text-4xl font-bold mb-8 text-center">Generated Domain Names</h1>
-            <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
-                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
-            >
-                {results.map((result, index) => (
-                    <motion.div key={index} variants={itemVariants}>
-                        <div
-                            className="bg-white rounded-lg shadow-md h-full cursor-pointer hover:shadow-lg transition-shadow duration-300 overflow-hidden"
-                            onClick={() => setSelectedDomain(result)}
-                        >
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-4">{result.domain_name}</h2>
-                                <p className="text-gray-600 mb-4">{result.explain}</p>
-                            </div>
-                            <div className="bg-gray-50 px-6 py-4 flex justify-between items-center">
-                                <span className="text-indigo-600 font-bold text-lg">
-                                    ${result.product.price.purchase}/year
-                                </span>
-                                {result.product.price.discount > 0 && (
-                                    <span className="bg-green-100 text-green-800 text-xs font-semibold px-2 py-1 rounded">
-                                        Save {result.product.price.discount}%
-                                    </span>
-                                )}
-                            </div>
+        <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-purple-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+                <h1 className="text-5xl font-extrabold text-center text-indigo-800 mb-12">
+                    Generated Domain Names
+                </h1>
+
+                <div className="mb-8">
+                    <div className="max-w-xl mx-auto">
+                        <div className="relative">
+                            <input
+                                type="text"
+                                placeholder="Search domains..."
+                                className="w-full py-3 px-4 pr-10 rounded-full border-2 border-indigo-300 focus:outline-none focus:border-indigo-500 transition duration-300"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                            />
+                            <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-indigo-500" size={20} />
                         </div>
-                    </motion.div>
-                ))}
-            </motion.div>
+                    </div>
+                </div>
+
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate="visible"
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                >
+                    {filteredResults.map((result, index) => (
+                        <motion.div key={index} variants={itemVariants}>
+                            <div
+                                className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl cursor-pointer"
+                                onClick={() => setSelectedDomain(result)}
+                            >
+                                <div className="p-6">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <h2 className="text-2xl font-bold text-indigo-700">{result.domain_name}</h2>
+                                        {index === 0 && (
+                                            <span className="bg-yellow-400 text-yellow-800 text-xs font-semibold px-2 py-1 rounded-full flex items-center">
+                                                <FiStar className="mr-1" /> Featured
+                                            </span>
+                                        )}
+                                    </div>
+                                    <p className="text-gray-600 mb-4">{result.explain}</p>
+                                    <div className="flex items-center text-sm text-gray-500">
+                                        <FiGlobe className="mr-2" />
+                                        <span>{result.domain_tld}</span>
+                                    </div>
+                                </div>
+                                <div className="bg-gradient-to-r from-indigo-500 to-purple-500 px-6 py-4 flex justify-between items-center">
+                                    <span className="text-white font-bold text-xl">
+                                        ${result.product.price.purchase}/{result.product.price.billing_period.period_unit}
+                                    </span>
+                                    {result.product.price.discount > 0 && (
+                                        <span className="bg-green-400 text-green-800 text-xs font-semibold px-2 py-1 rounded-full">
+                                            Save {result.product.price.discount}%
+                                        </span>
+                                    )}
+                                </div>
+                            </div>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </div>
 
             {selectedDomain && (
                 <motion.div
@@ -99,37 +129,30 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
                     onClick={() => setSelectedDomain(null)}
                 >
                     <div
-                        className="bg-white rounded-lg shadow-xl max-w-2xl w-full overflow-hidden"
+                        className="bg-white rounded-lg shadow-2xl max-w-2xl w-full overflow-hidden"
                         onClick={e => e.stopPropagation()}
                     >
-                        <div className="p-6">
-                            <h2 className="text-3xl font-bold mb-4">{selectedDomain.domain_name}</h2>
+                        <div className="p-8">
+                            <h2 className="text-3xl font-bold mb-4 text-indigo-800">{selectedDomain.domain_name}</h2>
                             <p className="text-gray-600 mb-6">{selectedDomain.explain}</p>
                             <div className="mb-6">
-                                <h3 className="text-xl font-semibold mb-2">Logo Idea</h3>
+                                <h3 className="text-xl font-semibold mb-2 text-indigo-700">Logo Idea</h3>
                                 <p className="text-gray-600 mb-4">{selectedDomain.logo_description}</p>
-                                {generatedLogo ? (
-                                    <img src={generatedLogo} alt="Generated Logo" className="w-32 h-32 object-contain mx-auto" />
-                                ) : (
-                                    <button
-                                        onClick={() => generateLogo(selectedDomain.logo_description)}
-                                        className="w-full bg-indigo-600 text-white py-2 px-4 rounded hover:bg-indigo-700 transition-colors"
-                                    >
-                                        Generate Logo
-                                    </button>
-                                )}
+                                <div className="bg-gray-100 p-4 rounded-lg text-center">
+                                    <p className="text-sm text-gray-500">Logo placeholder</p>
+                                </div>
                             </div>
                         </div>
-                        <div className="bg-gray-50 px-6 py-4 flex justify-between items-center">
+                        <div className="bg-gradient-to-r from-indigo-500 to-purple-500 px-8 py-6 flex justify-between items-center">
                             <div>
-                                <span className="text-3xl font-bold text-indigo-600">
+                                <span className="text-4xl font-bold text-white">
                                     ${selectedDomain.product.price.purchase}
                                 </span>
-                                <span className="text-gray-500 ml-2">
+                                <span className="text-indigo-200 ml-2">
                                     /{selectedDomain.product.price.billing_period.period_unit}
                                 </span>
                             </div>
-                            <button className="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full transition-colors">
+                            <button className="bg-white text-indigo-600 font-semibold py-2 px-6 rounded-full hover:bg-indigo-100 transition-colors duration-300">
                                 Purchase
                             </button>
                         </div>
