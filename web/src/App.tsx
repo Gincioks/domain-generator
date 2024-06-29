@@ -44,7 +44,9 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-indigo-400 flex items-center justify-center">
       <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-2xl">
-        <Navbar currentStep={currentStep} onStepChange={handleStepChange} />
+        {currentStep !== "generating" && (
+          <Navbar currentStep={currentStep} onStepChange={handleStepChange} />
+        )}
         {currentStep === "nameStyle" && (
           <NameStyleSelector
             selectedStyle={nameStyle}
@@ -70,8 +72,6 @@ const App: React.FC = () => {
         )}
         {currentStep === "optionalSettings" && (
           <OptionalSettings
-            checkDomains={checkDomains}
-            onUpdateCheckDomains={setCheckDomains}
             onNext={nextStep}
           />
         )}

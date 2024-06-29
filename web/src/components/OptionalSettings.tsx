@@ -1,21 +1,21 @@
 import React, { useState, useCallback, useRef } from "react";
 
 interface OptionalSettingsProps {
-  checkDomains: boolean;
-  onUpdateCheckDomains: (check: boolean) => void;
   onNext: () => void;
 }
 
 const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
   const [range, setRange] = useState<[number, number]>([0, 20]);
+  const [selectedDomains, setSelectedDomains] = useState<string[]>([".com"]);
+  const [whitelist, setWhitelist] = useState<string>("");
   const sliderRef = useRef<HTMLDivElement>(null);
   const domainExtensions = [
     ".com",
     ".ai",
     ".org",
+    ".lt",
     ".co",
     ".io",
-    ".ai",
     ".ly",
     ".ca",
     ".au",
@@ -60,6 +60,14 @@ const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
     [range]
   );
 
+  const handleDomainToggle = (domain: string) => {
+    setSelectedDomains((prev) =>
+      prev.includes(domain)
+        ? prev.filter((d) => d !== domain)
+        : [...prev, domain]
+    );
+  };
+
   return (
     <div>
       <h2 className="text-2xl font-bold mb-4">Optional settings</h2>
@@ -68,6 +76,8 @@ const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
           className="w-full p-2 border rounded-lg"
           type="text"
           placeholder="Whitelist words"
+          value={whitelist}
+          onChange={(e) => setWhitelist(e.target.value)}
         />
         <p className="text-sm text-gray-500 mt-1">
           Words, prefixes or suffixes that should be included (separate with
@@ -110,9 +120,9 @@ const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
           {domainExtensions.map((ext) => (
             <button
               key={ext}
-              className={`p-2 border rounded-lg ${
-                ext === ".com" ? "bg-indigo-100 border-indigo-300" : ""
-              }`}
+              className={`p-2 border rounded-lg ${selectedDomains.includes(ext) ? "bg-indigo-100 border-indigo-300" : ""
+                }`}
+              onClick={() => handleDomainToggle(ext)}
             >
               {ext}
             </button>
@@ -124,7 +134,7 @@ const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
       </div>
       <button
         className="mt-6 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700"
-        onClick={onNext}
+        onClick={() => onNext()}
       >
         Generate Names
       </button>
