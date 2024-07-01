@@ -1,33 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 interface GeneratingScreenProps {
-  onComplete: () => void;
+  progress: number;
+  status: string;
 }
 
-const GeneratingScreen: React.FC<GeneratingScreenProps> = ({ onComplete }) => {
-  const [progress, setProgress] = useState(0);
-  const [status, setStatus] = useState("Initializing...");
-
-  useEffect(() => {
-    const simulateLoading = async () => {
-      const stages = [
-        { progress: 20, status: "Analyzing input..." },
-        { progress: 40, status: "Generating name ideas..." },
-        { progress: 60, status: "Checking domain availability..." },
-        { progress: 80, status: "Finalizing results..." },
-        { progress: 100, status: "Complete!" },
-      ];
-
-      for (const stage of stages) {
-        await new Promise((resolve) => setTimeout(resolve, 1500)); // Wait for 1.5 seconds
-        setProgress(stage.progress);
-        setStatus(stage.status);
-      }
-    };
-
-    simulateLoading();
-  }, []);
-
+const GeneratingScreen: React.FC<GeneratingScreenProps> = ({ progress, status }) => {
   return (
     <div className="text-center">
       <h1 className="text-4xl font-bold mb-8">Hostinger Domain Generator</h1>
@@ -50,14 +28,6 @@ const GeneratingScreen: React.FC<GeneratingScreenProps> = ({ onComplete }) => {
             ></div>
           ))}
         </div>
-      )}
-      {progress === 100 && (
-        <button
-          className="mt-4 px-6 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors"
-          onClick={onComplete}
-        >
-          View Results
-        </button>
       )}
     </div>
   );

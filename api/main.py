@@ -2,12 +2,15 @@
 This module defines the FastAPI application and the endpoint for generating domain names.
 """
 import os
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.responses import JSONResponse, StreamingResponse
 from fastapi.openapi.docs import get_swagger_ui_html
+from fastapi.middleware.cors import CORSMiddleware
 from tasks import DomainNameGenerator, OllamaModelPreparer
 from helpers import GenerateDomainsRequest, PullLLMRequest, LoadModelRequest, CreateModelRequest, stream_model, get_models_names
 from dotenv import load_dotenv
+import asyncio
+import json
 
 load_dotenv()
 
@@ -32,6 +35,15 @@ app = FastAPI(
     default_tags=["setup"],
     default_status_codes={404: {"description": "Not found"}},
     default_summary="Generate domain names"
+)
+
+# Add CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:8080"],  # Add your React app's URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 llm_wizard = OllamaModelPreparer(
@@ -74,31 +86,68 @@ async def load_model(request: LoadModelRequest):
     return StreamingResponse(stream_model(llm_wizard.generate, request.model), media_type="application/json")
 
 
+# @app.post("/generate-by-description", tags=["Generate"], summary="Generate domain names")
+# async def generate_domains(request: GenerateDomainsRequest):
+#     """
+#     Generates domain names based on the input parameters.
+#     """
+#     generator = DomainNameGenerator(
+#         base_url=llm_wizard.url,
+#         model=llm_wizard.model_name,  # latest loaded model
+#         keywords=request.keywords,
+#         style=request.style,
+#         number_of_domains=request.number_of_domains,
+#         reviewed_domains=request.reviewed_domains,
+#         description=request.description,
+#         min_domain_length=request.min_domain_length,
+#         max_domain_length=request.max_domain_length,
+#         included_words=request.included_words,
+#         tlds=request.tlds
+#     )
+
+#     try:
+#         domain_results = generator.run()
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e)) from e
+
+#     return {"domains": domain_results}
+
 @app.post("/generate-by-description", tags=["Generate"], summary="Generate domain names")
 async def generate_domains(request: GenerateDomainsRequest):
     """
-    Generates domain names based on the input parameters.
+    Generates domain names based on the input parameters with streaming progress updates.
     """
-    generator = DomainNameGenerator(
-        base_url=llm_wizard.url,
-        model=llm_wizard.model_name,  # latest loaded model
-        keywords=request.keywords,
-        style=request.style,
-        number_of_domains=request.number_of_domains,
-        reviewed_domains=request.reviewed_domains,
-        description=request.description,
-        min_domain_length=request.min_domain_length,
-        max_domain_length=request.max_domain_length,
-        included_words=request.included_words,
-        tlds=request.tlds
-    )
+    async def generate_domains_stream():
+        generator = DomainNameGenerator(
+            base_url=llm_wizard.url,
+            model=llm_wizard.model_name,  # latest loaded model
+            keywords=request.keywords,
+            style=request.style,
+            number_of_domains=request.number_of_domains,
+            reviewed_domains=request.reviewed_domains,
+            description=request.description,
+            min_domain_length=request.min_domain_length,
+            max_domain_length=request.max_domain_length,
+            included_words=request.included_words,
+            tlds=request.tlds
+        )
 
-    try:
-        domain_results = generator.run()
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e)) from e
+        try:
+            # Simulate progress updates
+            for i in range(1, 5):
+                await asyncio.sleep(1)  # Simulate work being done
+                progress = i * 25
+                yield json.dumps({"progress": progress, "status": f"Progress: {progress}%"}) + "\n"
 
-    return {"domains": domain_results}
+            # Generate domains
+            domain_results = generator.run()
+
+            # Send final results
+            yield json.dumps({"progress": 100, "status": "Complete", "domains": domain_results}) + "\n"
+        except Exception as e:
+            yield json.dumps({"error": str(e)}) + "\n"
+
+    return StreamingResponse(generate_domains_stream(), media_type="application/x-ndjson")
 
 if __name__ == "__main__":
     import uvicorn

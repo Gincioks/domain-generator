@@ -2,7 +2,9 @@ import React from "react";
 
 interface BrandInfoProps {
   brandInfo: string;
+  brandDescription: string;
   onUpdateBrandInfo: (info: string) => void;
+  onUpdateBrandDescription: (description: string) => void;
   checkDomains: boolean;
   onUpdateCheckDomains: (checked: boolean) => void;
   onNext: () => void;
@@ -10,7 +12,9 @@ interface BrandInfoProps {
 
 const BrandInfo: React.FC<BrandInfoProps> = ({
   brandInfo,
+  brandDescription,
   onUpdateBrandInfo,
+  onUpdateBrandDescription,
   checkDomains,
   onUpdateCheckDomains,
   onNext,
@@ -29,6 +33,8 @@ const BrandInfo: React.FC<BrandInfoProps> = ({
         className="w-full mt-4 p-2 border rounded-lg"
         type="text"
         placeholder="Business description (optional)"
+        value={brandDescription}
+        onChange={(e) => onUpdateBrandDescription(e.target.value)}
       />
       <p className="text-sm text-gray-500 mt-1">
         A short one-sentence description of your business or product.

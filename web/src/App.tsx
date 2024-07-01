@@ -6,7 +6,19 @@ import RandomnessSelector from "./components/RandomnessSelector";
 import NameStyleSelector from "./components/NameStyleSelector";
 import Navbar from "./components/Navbar";
 import ResultsPage from "./components/ResultsPage";
-import { mockGeneratedResults } from "./lib/utils";
+import { GenerateDomainsRequest, GeneratedResult, mockGeneratedResults } from "./lib/utils";
+import axios, { AxiosProgressEvent } from "axios";
+
+interface ProgressData {
+  progress: number;
+  status: string;
+}
+
+interface DomainsData {
+  domains: GeneratedResult[];
+}
+
+type StreamData = ProgressData | DomainsData;
 
 const App: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<
@@ -14,13 +26,18 @@ const App: React.FC = () => {
   >("nameStyle");
   const [nameStyle, setNameStyle] = useState<string>("auto");
   const [randomness, setRandomness] = useState<"low" | "medium" | "high">("medium");
-  const [brandInfo, setBrandInfo] = useState<string>("");
+  const [brandInfo, setBrandInfo] = useState<string>("gince ai team");
+  const [brandDescription, setBrandDescription] = useState<string>("gince ai team");
   const [checkDomains, setCheckDomains] = useState<boolean>(true);
   const [optionalSettings, setOptionalSettings] = useState<boolean>(false);
   const [range, setRange] = useState<[number, number]>([0, 20]);
   const [selectedDomains, setSelectedDomains] = useState<string[]>([".com"]);
   const [whitelist, setWhitelist] = useState<string>("");
+  const [generatedResults, setGeneratedResults] = useState<GeneratedResult[]>(mockGeneratedResults);
+  const [generationProgress, setGenerationProgress] = useState<number>(0);
+  const [generationStatus, setGenerationStatus] = useState<string>("Initializing...");
   const sliderRef = useRef<HTMLDivElement>(null);
+  const [accumulatedData, setAccumulatedData] = useState<string>("");
 
   const nextStep = () => {
     switch (currentStep) {
@@ -32,6 +49,7 @@ const App: React.FC = () => {
         break;
       case "brandInfo":
         setCurrentStep("generating");
+        generateDomains();
         break;
     }
   };
@@ -42,9 +60,79 @@ const App: React.FC = () => {
     setCurrentStep(step);
   };
 
-  const handleGenerationComplete = () => {
-    setCurrentStep("results");
-    // Here you would typically fetch or display the generated results
+  const updateStatus = (percent: number) => {
+    if (percent < 25) {
+      setGenerationStatus("Analyzing input...");
+    } else if (percent < 50) {
+      setGenerationStatus("Generating name ideas...");
+    } else if (percent < 75) {
+      setGenerationStatus("Checking domain availability...");
+    } else if (percent < 100) {
+      setGenerationStatus("Finalizing results...");
+    } else {
+      setGenerationStatus("Complete!");
+    }
+    setGenerationProgress(percent);
+  };
+
+  const generateDomains = async () => {
+    const formattedTlds = selectedDomains.map(tld => tld.startsWith(".") ? tld.slice(1) : tld);
+    try {
+      const requestBody: GenerateDomainsRequest = {
+        keywords: brandInfo.split(" "),
+        description: brandDescription,
+        style: nameStyle,
+        number_of_domains: 10,
+        reviewed_domains: [],
+        min_domain_length: range[0] > 0 ? range[0] : 1,
+        max_domain_length: range[1] > 0 ? range[1] : 20,
+        included_words: whitelist ? whitelist.split(",").map(word => word.trim()) : [],
+        tlds: formattedTlds.length > 0 ? formattedTlds : []
+      };
+
+      const response = await axios.post<string>(
+        "http://localhost:8000/generate-by-description",
+        requestBody,
+        {
+          responseType: 'text',
+          onDownloadProgress: (progressEvent: AxiosProgressEvent) => {
+            const xhr = progressEvent.event.target as XMLHttpRequest;
+            const newData = xhr.responseText.slice(accumulatedData.length);
+            setAccumulatedData(prev => prev + newData);
+
+            const lines = newData.split('\n').filter(Boolean);
+            lines.forEach((line: string) => {
+              try {
+                const data = JSON.parse(line) as StreamData;
+                if ('progress' in data) {
+                  updateStatus(data.progress);
+                }
+                if ('domains' in data) {
+                  setGeneratedResults(data.domains);
+                  setCurrentStep("results");
+                }
+              } catch (error) {
+                console.error("Error parsing JSON:", error);
+              }
+            });
+          }
+        }
+      );
+
+      // Final processing of the complete response
+      const lines = response.data.split('\n').filter(Boolean);
+      const lastLine = lines[lines.length - 1];
+      const finalData = JSON.parse(lastLine) as StreamData;
+      if ('domains' in finalData) {
+        setGeneratedResults(finalData.domains);
+        setCurrentStep("results");
+      }
+    } catch (error) {
+      console.error("Error generating domains:", error);
+      setGenerationStatus("Error occurred. Please try again.");
+    } finally {
+      setAccumulatedData(""); // Reset accumulated data for next request
+    }
   };
 
   return (
@@ -75,7 +163,9 @@ const App: React.FC = () => {
         {!optionalSettings && currentStep === "brandInfo" && (
           <BrandInfo
             brandInfo={brandInfo}
+            brandDescription={brandDescription}
             onUpdateBrandInfo={setBrandInfo}
+            onUpdateBrandDescription={setBrandDescription}
             checkDomains={checkDomains}
             onUpdateCheckDomains={setCheckDomains}
             onNext={nextStep}
@@ -93,10 +183,13 @@ const App: React.FC = () => {
           />
         )}
         {currentStep === "generating" && (
-          <GeneratingScreen onComplete={handleGenerationComplete} />
+          <GeneratingScreen
+            progress={generationProgress}
+            status={generationStatus}
+          />
         )}
         {currentStep === "results" && (
-          <ResultsPage results={mockGeneratedResults} />
+          <ResultsPage results={generatedResults} />
         )}
       </div>
     </div>
