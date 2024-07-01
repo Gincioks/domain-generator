@@ -6,19 +6,9 @@ import RandomnessSelector from "./components/RandomnessSelector";
 import NameStyleSelector from "./components/NameStyleSelector";
 import Navbar from "./components/Navbar";
 import ResultsPage from "./components/ResultsPage";
-import { GenerateDomainsRequest, GeneratedResult, mockGeneratedResults } from "./lib/utils";
+import { GenerateDomainsRequest, GeneratedResult } from "./lib/utils";
 import axios, { AxiosProgressEvent } from "axios";
-
-interface ProgressData {
-  progress: number;
-  status: string;
-}
-
-interface DomainsData {
-  domains: GeneratedResult[];
-}
-
-type StreamData = ProgressData | DomainsData;
+import { StreamData } from "./lib/utils";
 
 const App: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<
@@ -26,18 +16,20 @@ const App: React.FC = () => {
   >("nameStyle");
   const [nameStyle, setNameStyle] = useState<string>("auto");
   const [randomness, setRandomness] = useState<"low" | "medium" | "high">("medium");
-  const [brandInfo, setBrandInfo] = useState<string>("gince ai team");
-  const [brandDescription, setBrandDescription] = useState<string>("gince ai team");
+  const [brandInfo, setBrandInfo] = useState<string>("");
+  const [brandDescription, setBrandDescription] =
+    useState<string>("Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.");
   const [checkDomains, setCheckDomains] = useState<boolean>(true);
   const [optionalSettings, setOptionalSettings] = useState<boolean>(false);
   const [range, setRange] = useState<[number, number]>([0, 20]);
   const [selectedDomains, setSelectedDomains] = useState<string[]>([".com"]);
   const [whitelist, setWhitelist] = useState<string>("");
-  const [generatedResults, setGeneratedResults] = useState<GeneratedResult[]>(mockGeneratedResults);
+  const [generatedResults, setGeneratedResults] = useState<GeneratedResult[]>([]);
   const [generationProgress, setGenerationProgress] = useState<number>(0);
   const [generationStatus, setGenerationStatus] = useState<string>("Initializing...");
   const sliderRef = useRef<HTMLDivElement>(null);
   const [accumulatedData, setAccumulatedData] = useState<string>("");
+  const [reviewedDomains, setReviewedDomains] = useState<string[]>([]);
 
   const nextStep = () => {
     switch (currentStep) {
@@ -58,6 +50,7 @@ const App: React.FC = () => {
     step: "nameStyle" | "randomness" | "brandInfo"
   ) => {
     setCurrentStep(step);
+    if (optionalSettings) setOptionalSettings(false);
   };
 
   const updateStatus = (percent: number) => {
@@ -82,8 +75,10 @@ const App: React.FC = () => {
         keywords: brandInfo.split(" "),
         description: brandDescription,
         style: nameStyle,
+        randomness: randomness,
+        checkDomains: checkDomains,
         number_of_domains: 10,
-        reviewed_domains: [],
+        reviewed_domains: reviewedDomains,
         min_domain_length: range[0] > 0 ? range[0] : 1,
         max_domain_length: range[1] > 0 ? range[1] : 20,
         included_words: whitelist ? whitelist.split(",").map(word => word.trim()) : [],
@@ -91,7 +86,7 @@ const App: React.FC = () => {
       };
 
       const response = await axios.post<string>(
-        "http://localhost:8000/generate-by-description",
+        `${import.meta.env.VITE_API_URL}/generate-by-description`,
         requestBody,
         {
           responseType: 'text',
@@ -133,6 +128,14 @@ const App: React.FC = () => {
     } finally {
       setAccumulatedData(""); // Reset accumulated data for next request
     }
+  };
+
+  const handleRegenerate = () => {
+    setCurrentStep("generating");
+    setGenerationProgress(0);
+    setGenerationStatus("Initializing...");
+    setReviewedDomains([...reviewedDomains, ...generatedResults.map(result => result.domain_name)]);
+    generateDomains();
   };
 
   return (
@@ -189,7 +192,7 @@ const App: React.FC = () => {
           />
         )}
         {currentStep === "results" && (
-          <ResultsPage results={generatedResults} />
+          <ResultsPage results={generatedResults} onRegenerate={handleRegenerate} />
         )}
       </div>
     </div>

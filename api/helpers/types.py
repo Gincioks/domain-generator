@@ -44,6 +44,15 @@ class GenerateDomainsRequest(BaseModel):
         default=None,
         example="modern"
     )
+    randomness: str = Field(
+        default=None,
+        example="medium",
+        enum=["low", "medium", "high"]
+    )
+    check_domains: bool = Field(
+        default=True,
+        example=True
+    )
     number_of_domains: int = Field(
         default=10,
         example=10

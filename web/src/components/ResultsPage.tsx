@@ -1,37 +1,15 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiSearch, FiStar, FiGlobe } from 'react-icons/fi';
-
-interface DomainResult {
-    domain_name: string;
-    domain_tld: string;
-    explain: string;
-    logo_description: string;
-    label: {
-        text: string | null;
-        class: string | null;
-    };
-    product: {
-        product_slug: string;
-        price: {
-            old: number;
-            purchase: number;
-            discount: number;
-            billing_period: {
-                period: number;
-                period_unit: string;
-            };
-        };
-    };
-    multi_year_deal: boolean;
-}
+import { FiSearch, FiStar, FiGlobe, FiRefreshCw } from 'react-icons/fi';
+import { GeneratedResult } from '@/lib/utils';
 
 interface ResultsPageProps {
-    results: DomainResult[];
+    results: GeneratedResult[];
+    onRegenerate: () => void;
 }
 
-const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
-    const [selectedDomain, setSelectedDomain] = useState<DomainResult | null>(null);
+const ResultsPage: React.FC<ResultsPageProps> = ({ results, onRegenerate }) => {
+    const [selectedDomain, setSelectedDomain] = useState<GeneratedResult | null>(null);
     const [searchTerm, setSearchTerm] = useState('');
 
     const filteredResults = results.filter(result =>
@@ -63,8 +41,8 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
                     Generated Domain Names
                 </h1>
 
-                <div className="mb-8">
-                    <div className="max-w-xl mx-auto">
+                <div className="mb-8 flex justify-between items-center">
+                    <div className="max-w-xl w-full">
                         <div className="relative">
                             <input
                                 type="text"
@@ -76,6 +54,13 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ results }) => {
                             <FiSearch className="absolute right-3 top-1/2 transform -translate-y-1/2 text-indigo-500" size={20} />
                         </div>
                     </div>
+                    <button
+                        onClick={onRegenerate}
+                        className="bg-indigo-600 text-white font-semibold py-3 px-6 rounded-full hover:bg-indigo-700 transition-colors duration-300 flex items-center"
+                    >
+                        <FiRefreshCw className="mr-2" />
+                        Re-generate
+                    </button>
                 </div>
 
                 <motion.div

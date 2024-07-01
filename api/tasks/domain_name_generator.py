@@ -14,15 +14,16 @@ class DomainNameGenerator:
     Generates domain names based on given criteria and checks their availability.
     """
 
-    def __init__(self, base_url=None, model=None, keywords=None, style=None, number_of_domains=10,
-                 description=None, domains_history=None, min_domain_length=None, reviewed_domains=None,
+    def __init__(self, base_url=None, model=None, keywords=None, style=None, randomness=None, number_of_domains=10,
+                 check_domains=True, description=None, min_domain_length=None, reviewed_domains=None,
                  max_domain_length=None, included_words=None, tlds=None):
         print(f"Model: {model}")
         self.keywords = keywords if keywords else []
         self.style = style
+        self.randomness = randomness
         self.number_of_domains = number_of_domains
+        self.check_domains = check_domains
         self.description = description
-        self.domains_history = domains_history
         self.reviewed_domains = reviewed_domains
         self.min_domain_length = min_domain_length
         self.max_domain_length = max_domain_length
@@ -38,20 +39,21 @@ class DomainNameGenerator:
         Generates a list of domain names that fit the given criteria.
         """
         # prompt = f'Suggest at least {self.number_of_domains} domain names that fit the following criteria:\n'
-        prompt = 'Suggest at least 10 domain names that fit the following criteria:\n'
-        prompt += f'For a business doing: ###{self.description}###' if self.description else ""
-        prompt += (f'With these keywords: ###{", ".join(self.keywords)}###'
+        prompt = 'Suggest domain names that fit the following criteria:\n'
+        prompt += f'For a business doing: ###{self.description}###\n' if self.description else ""
+        prompt += (f'With these keywords: ###{", ".join(self.keywords)}###\n'
                    if self.keywords else "")
-        prompt += (f'In style: ###{self.style}###'
+        prompt += (f'In style: ###{self.style}###\n'
                    if self.style else "")
-        prompt += (f'With a minimum length of: {self.min_domain_length}'
+        prompt += f'With a randomness of: {self.randomness}\n' if self.randomness else ""
+        prompt += (f'With a minimum length of: {self.min_domain_length}\n'
                    if self.min_domain_length else "")
-        prompt += (f'With a maximum length of: {self.max_domain_length}'
+        prompt += (f'With a maximum length of: {self.max_domain_length}\n'
                    if self.max_domain_length else "")
-        prompt += (f'Include the following words: {", ".join(self.included_words)}'
+        prompt += (f'Words, prefixes or suffixes that should be included: {", ".join(self.included_words)}\n'
                    if self.included_words else "")
-        prompt += f'Consider these tlds: {", ".join(self.tlds)}' if self.tlds else ""
-        prompt += f'Do not suggest these domains: {", ".join(self.reviewed_domains)}' if self.reviewed_domains else ""
+        prompt += f'Consider these tlds: {", ".join(self.tlds)}\n' if self.tlds else ""
+        prompt += f'DO NOT suggest these domains: {", ".join(self.reviewed_domains)}\n' if self.reviewed_domains else ""
 
         functions = [
             {
@@ -149,7 +151,11 @@ class DomainNameGenerator:
         """
         inputs = {
             "keywords": self.keywords,
+            "style": self.style,
+            "randomness": self.randomness,
+            "number_of_domains": self.number_of_domains,
             "description": self.description,
+            "reviewed_domains": self.reviewed_domains,
             "min_domain_length": self.min_domain_length,
             "max_domain_length": self.max_domain_length,
             "included_words": self.included_words,
@@ -164,7 +170,10 @@ class DomainNameGenerator:
         for suggestion in generated_domains:
             for tld in (self.tlds or ['com']):
                 domain = f'{suggestion["domain"]}.{tld}'
-                exists = self.check_domain_availability(domain)
+                if self.check_domains:
+                    exists = self.check_domain_availability(domain)
+                else:
+                    exists = None
                 formatted_domain = DomainFormatter.format_domain(
                     domain, tld, suggestion["explain"], suggestion["logo_description"])
                 domain_results.append(formatted_domain)

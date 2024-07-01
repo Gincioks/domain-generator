@@ -25,20 +25,20 @@ const BrandInfo: React.FC<BrandInfoProps> = ({
       <textarea
         className="w-full p-2 border rounded-lg"
         rows={4}
-        value={brandInfo}
-        onChange={(e) => onUpdateBrandInfo(e.target.value)}
-        placeholder="Add any keywords that may be related to your idea or business."
-      />
-      <input
-        className="w-full mt-4 p-2 border rounded-lg"
-        type="text"
-        placeholder="Business description (optional)"
+        placeholder="Business description"
         value={brandDescription}
         onChange={(e) => onUpdateBrandDescription(e.target.value)}
       />
       <p className="text-sm text-gray-500 mt-1">
         A short one-sentence description of your business or product.
       </p>
+      <input
+        className="w-full mt-4 p-2 border rounded-lg"
+        type="text"
+        value={brandInfo}
+        onChange={(e) => onUpdateBrandInfo(e.target.value)}
+        placeholder="Add any keywords that may be related to your idea or business (optional)"
+      />
       <div className="mt-4 flex items-center">
         <input
           type="checkbox"

@@ -40,18 +40,19 @@ app = FastAPI(
 # Add CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],  # Add your React app's URL
+    allow_origins=[os.getenv("FRONTEND_URL")],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+default_model = os.getenv("TEXT_MODEL") or get_models_names()[0]
+
 llm_wizard = OllamaModelPreparer(
-    model_name=os.getenv("TEXT_MODEL") or get_models_names()[0],
+    model_name=default_model,
     host=os.getenv("LLM_BASE_URL"),
     port=os.getenv("LLM_BASE_URL_PORT")
 )
-
 
 @app.get("/docs", include_in_schema=False, tags=["docs"], summary="Custom Swagger UI. Not included in OpenAPI docs")
 async def custom_swagger_ui_html_github():
@@ -86,32 +87,6 @@ async def load_model(request: LoadModelRequest):
     return StreamingResponse(stream_model(llm_wizard.generate, request.model), media_type="application/json")
 
 
-# @app.post("/generate-by-description", tags=["Generate"], summary="Generate domain names")
-# async def generate_domains(request: GenerateDomainsRequest):
-#     """
-#     Generates domain names based on the input parameters.
-#     """
-#     generator = DomainNameGenerator(
-#         base_url=llm_wizard.url,
-#         model=llm_wizard.model_name,  # latest loaded model
-#         keywords=request.keywords,
-#         style=request.style,
-#         number_of_domains=request.number_of_domains,
-#         reviewed_domains=request.reviewed_domains,
-#         description=request.description,
-#         min_domain_length=request.min_domain_length,
-#         max_domain_length=request.max_domain_length,
-#         included_words=request.included_words,
-#         tlds=request.tlds
-#     )
-
-#     try:
-#         domain_results = generator.run()
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e)) from e
-
-#     return {"domains": domain_results}
-
 @app.post("/generate-by-description", tags=["Generate"], summary="Generate domain names")
 async def generate_domains(request: GenerateDomainsRequest):
     """
@@ -123,6 +98,8 @@ async def generate_domains(request: GenerateDomainsRequest):
             model=llm_wizard.model_name,  # latest loaded model
             keywords=request.keywords,
             style=request.style,
+            randomness=request.randomness,
+            check_domains=request.check_domains,
             number_of_domains=request.number_of_domains,
             reviewed_domains=request.reviewed_domains,
             description=request.description,
@@ -135,7 +112,10 @@ async def generate_domains(request: GenerateDomainsRequest):
         try:
             # Simulate progress updates
             for i in range(1, 5):
-                await asyncio.sleep(1)  # Simulate work being done
+                if i == 2:
+                    await asyncio.sleep(20)  # Simulate work being done
+                else:
+                    await asyncio.sleep(5)  # Simulate work being done
                 progress = i * 25
                 yield json.dumps({"progress": progress, "status": f"Progress: {progress}%"}) + "\n"
 
