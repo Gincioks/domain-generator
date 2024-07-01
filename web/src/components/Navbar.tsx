@@ -2,17 +2,19 @@ import React from "react";
 
 interface NavbarProps {
   currentStep:
-    | "nameStyle"
-    | "randomness"
-    | "brandInfo"
-    | "optionalSettings"
-    | "generating";
+  | "nameStyle"
+  | "randomness"
+  | "brandInfo"
+  | "optionalSettings"
+  | "generating";
   onStepChange: (
-    step: "nameStyle" | "randomness" | "brandInfo" | "optionalSettings"
+    step: "nameStyle" | "randomness" | "brandInfo"
   ) => void;
+  onOptionalSettingsChange: (settings: boolean) => void;
+  optionalSettings: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ currentStep, onStepChange }) => {
+const Navbar: React.FC<NavbarProps> = ({ currentStep, onStepChange, onOptionalSettingsChange, optionalSettings }) => {
   const steps = [
     { id: "nameStyle", label: "Name Style" },
     { id: "randomness", label: "Randomness" },
@@ -28,11 +30,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentStep, onStepChange }) => {
             onClick={() =>
               onStepChange(step.id as "nameStyle" | "randomness" | "brandInfo")
             }
-            className={`px-3 py-1 rounded-full text-sm transition-colors duration-200 ease-in-out ${
-              currentStep === step.id
-                ? "bg-indigo-600 text-white font-semibold"
-                : "text-gray-500 hover:bg-indigo-100"
-            }`}
+            className={`px-3 py-1 rounded-full text-sm transition-colors duration-200 ease-in-out ${currentStep === step.id
+              ? "bg-indigo-600 text-white font-semibold"
+              : "text-gray-500 hover:bg-indigo-100"
+              }`}
           >
             {step.label}
           </button>
@@ -40,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentStep, onStepChange }) => {
       </div>
       <button
         className="text-gray-400 hover:text-indigo-600 transition-colors duration-200 ease-in-out"
-        onClick={() => onStepChange("optionalSettings")}
+        onClick={() => onOptionalSettingsChange(!optionalSettings)}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

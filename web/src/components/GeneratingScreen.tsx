@@ -30,7 +30,7 @@ const GeneratingScreen: React.FC<GeneratingScreenProps> = ({ onComplete }) => {
 
   return (
     <div className="text-center">
-      <h1 className="text-4xl font-bold mb-8">namelix</h1>
+      <h1 className="text-4xl font-bold mb-8">Hostinger Domain Generator</h1>
       <div className="mb-8">
         <div className="w-full bg-gray-200 rounded-full h-2.5 overflow-hidden">
           <div

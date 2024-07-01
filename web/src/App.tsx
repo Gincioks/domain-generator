@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import GeneratingScreen from "./components/GeneratingScreen";
 import OptionalSettings from "./components/OptionalSettings";
 import BrandInfo from "./components/BrandInfo";
@@ -10,12 +10,17 @@ import { mockGeneratedResults } from "./lib/utils";
 
 const App: React.FC = () => {
   const [currentStep, setCurrentStep] = useState<
-    "nameStyle" | "randomness" | "brandInfo" | "optionalSettings" | "generating" | "results"
+    "nameStyle" | "randomness" | "brandInfo" | "generating" | "results"
   >("nameStyle");
-  const [nameStyle, setNameStyle] = useState<string>("");
+  const [nameStyle, setNameStyle] = useState<string>("auto");
   const [randomness, setRandomness] = useState<"low" | "medium" | "high">("medium");
   const [brandInfo, setBrandInfo] = useState<string>("");
   const [checkDomains, setCheckDomains] = useState<boolean>(true);
+  const [optionalSettings, setOptionalSettings] = useState<boolean>(false);
+  const [range, setRange] = useState<[number, number]>([0, 20]);
+  const [selectedDomains, setSelectedDomains] = useState<string[]>([".com"]);
+  const [whitelist, setWhitelist] = useState<string>("");
+  const sliderRef = useRef<HTMLDivElement>(null);
 
   const nextStep = () => {
     switch (currentStep) {
@@ -26,16 +31,13 @@ const App: React.FC = () => {
         setCurrentStep("brandInfo");
         break;
       case "brandInfo":
-        setCurrentStep("optionalSettings");
-        break;
-      case "optionalSettings":
         setCurrentStep("generating");
         break;
     }
   };
 
   const handleStepChange = (
-    step: "nameStyle" | "randomness" | "brandInfo" | "optionalSettings"
+    step: "nameStyle" | "randomness" | "brandInfo"
   ) => {
     setCurrentStep(step);
   };
@@ -49,23 +51,28 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-indigo-400 flex items-center justify-center">
       <div className={`bg-white rounded-lg shadow-lg p-8 w-full ${currentStep === "generating" ? "animate-fadeIn" : ""} ${currentStep === "results" ? "animate-fadeOut max-w-8xl" : " max-w-2xl"}`}>
         {currentStep !== "generating" && currentStep !== "results" && (
-          <Navbar currentStep={currentStep} onStepChange={handleStepChange} />
+          <Navbar
+            currentStep={currentStep}
+            onStepChange={handleStepChange}
+            optionalSettings={optionalSettings}
+            onOptionalSettingsChange={setOptionalSettings}
+          />
         )}
-        {currentStep === "nameStyle" && (
+        {!optionalSettings && currentStep === "nameStyle" && (
           <NameStyleSelector
             selectedStyle={nameStyle}
             onSelectStyle={setNameStyle}
             onNext={nextStep}
           />
         )}
-        {currentStep === "randomness" && (
+        {!optionalSettings && currentStep === "randomness" && (
           <RandomnessSelector
             selectedRandomness={randomness}
             onSelectRandomness={setRandomness}
             onNext={nextStep}
           />
         )}
-        {currentStep === "brandInfo" && (
+        {!optionalSettings && currentStep === "brandInfo" && (
           <BrandInfo
             brandInfo={brandInfo}
             onUpdateBrandInfo={setBrandInfo}
@@ -74,11 +81,15 @@ const App: React.FC = () => {
             onNext={nextStep}
           />
         )}
-        {currentStep === "optionalSettings" && (
+        {optionalSettings && (
           <OptionalSettings
-            // checkDomains={checkDomains}
-            // onUpdateCheckDomains={setCheckDomains}
-            onNext={nextStep}
+            range={range}
+            setRange={setRange}
+            selectedDomains={selectedDomains}
+            setSelectedDomains={setSelectedDomains}
+            whitelist={whitelist}
+            setWhitelist={setWhitelist}
+            sliderRef={sliderRef}
           />
         )}
         {currentStep === "generating" && (

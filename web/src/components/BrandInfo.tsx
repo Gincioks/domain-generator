@@ -47,7 +47,7 @@ const BrandInfo: React.FC<BrandInfoProps> = ({
         className="mt-6 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700"
         onClick={onNext}
       >
-        Next
+        Generate Names
       </button>
     </div>
   );

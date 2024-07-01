@@ -1,14 +1,17 @@
-import React, { useState, useCallback, useRef } from "react";
+import React, { useCallback } from "react";
 
 interface OptionalSettingsProps {
-  onNext: () => void;
+  range: [number, number];
+  selectedDomains: string[];
+  whitelist: string;
+  sliderRef: React.RefObject<HTMLDivElement>;
+  setRange: React.Dispatch<React.SetStateAction<[number, number]>>;
+  setSelectedDomains: React.Dispatch<React.SetStateAction<string[]>>;
+  setWhitelist: React.Dispatch<React.SetStateAction<string>>;
 }
 
-const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
-  const [range, setRange] = useState<[number, number]>([0, 20]);
-  const [selectedDomains, setSelectedDomains] = useState<string[]>([".com"]);
-  const [whitelist, setWhitelist] = useState<string>("");
-  const sliderRef = useRef<HTMLDivElement>(null);
+const OptionalSettings: React.FC<OptionalSettingsProps> = ({ range, setRange, selectedDomains, setSelectedDomains, whitelist, setWhitelist, sliderRef }) => {
+
   const domainExtensions = [
     ".com",
     ".ai",
@@ -132,12 +135,6 @@ const OptionalSettings: React.FC<OptionalSettingsProps> = ({ onNext }) => {
           Note: checking many domains extensions may take some time
         </p>
       </div>
-      <button
-        className="mt-6 w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700"
-        onClick={() => onNext()}
-      >
-        Generate Names
-      </button>
     </div>
   );
 };
