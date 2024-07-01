@@ -85,7 +85,7 @@ const ResultsPage: React.FC<ResultsPageProps> = ({ results, onRegenerate }) => {
                                         )}
                                     </div>
                                     <p className="text-gray-600 mb-4">{result.explain}</p>
-                                    <div className="flex items-center text-sm text-gray-500">
+                                    <div className={`flex items-center text-sm text-gray-500 ${result.exists ? 'text-red-500' : 'text-green-500'}`}>
                                         <FiGlobe className="mr-2" />
                                         <span>{result.domain_tld}</span>
                                     </div>

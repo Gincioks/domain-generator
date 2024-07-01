@@ -4,7 +4,7 @@ class DomainFormatter:
     """
 
     @staticmethod
-    def format_domain(domain, tld, explain, logo_description):
+    def format_domain(domain, tld, explain, logo_description, exists):
         """
         Formats a single domain entry.
 
@@ -21,10 +21,8 @@ class DomainFormatter:
             "domain_tld": tld,
             "explain": explain,
             "logo_description": logo_description,
-            "label": {
-                "text": None,
-                "class": None
-            },
+            "exists": exists,
+            "label": {"text": None, "class": None},
             "restriction": None,
             "product": {
                 "product_slug": f"domain:.{tld}",
@@ -32,15 +30,10 @@ class DomainFormatter:
                     "old": 14.99,
                     "purchase": 4.99 if tld == "com" else 9.99,
                     "discount": 66 if tld == "com" else 33,
-                    "billing_period": {
-                        "period": 1,
-                        "period_unit": "year"
-                    }
+                    "billing_period": {"period": 1, "period_unit": "year"},
                 },
-                "addons": {
-                    "privacy_protection": True
-                }
+                "addons": {"privacy_protection": True},
             },
             "tooltip": None,
-            "multi_year_deal": True
+            "multi_year_deal": True,
         }

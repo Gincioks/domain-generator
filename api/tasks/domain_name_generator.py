@@ -2,6 +2,7 @@
 This module contains the DomainNameGenerator class which generates domain names
 based on given criteria and checks their availability.
 """
+
 import json
 from helpers import LLMSUtils
 from .domain_checker import DomainChecker
@@ -14,9 +15,22 @@ class DomainNameGenerator:
     Generates domain names based on given criteria and checks their availability.
     """
 
-    def __init__(self, base_url=None, model=None, keywords=None, style=None, randomness=None, number_of_domains=10,
-                 check_domains=True, description=None, min_domain_length=None, reviewed_domains=None,
-                 max_domain_length=None, included_words=None, tlds=None):
+    def __init__(
+        self,
+        base_url=None,
+        model=None,
+        keywords=None,
+        style=None,
+        randomness=None,
+        number_of_domains=10,
+        check_domains=True,
+        description=None,
+        min_domain_length=None,
+        reviewed_domains=None,
+        max_domain_length=None,
+        included_words=None,
+        tlds=None,
+    ):
         print(f"Model: {model}")
         self.keywords = keywords if keywords else []
         self.style = style
@@ -29,31 +43,49 @@ class DomainNameGenerator:
         self.max_domain_length = max_domain_length
         self.included_words = included_words if included_words else []
         self.tlds = tlds if tlds else []
-        self.openai_utils = LLMSUtils(
-            base_url=base_url,
-            model=model
-        )
+        self.openai_utils = LLMSUtils(base_url=base_url, model=model)
 
     def generate_names(self):
         """
         Generates a list of domain names that fit the given criteria.
         """
         # prompt = f'Suggest at least {self.number_of_domains} domain names that fit the following criteria:\n'
-        prompt = 'Suggest domain names that fit the following criteria:\n'
-        prompt += f'For a business doing: ###{self.description}###\n' if self.description else ""
-        prompt += (f'With these keywords: ###{", ".join(self.keywords)}###\n'
-                   if self.keywords else "")
-        prompt += (f'In style: ###{self.style}###\n'
-                   if self.style else "")
-        prompt += f'With a randomness of: {self.randomness}\n' if self.randomness else ""
-        prompt += (f'With a minimum length of: {self.min_domain_length}\n'
-                   if self.min_domain_length else "")
-        prompt += (f'With a maximum length of: {self.max_domain_length}\n'
-                   if self.max_domain_length else "")
-        prompt += (f'Words, prefixes or suffixes that should be included: {", ".join(self.included_words)}\n'
-                   if self.included_words else "")
+        prompt = "Suggest domain names that fit the following criteria:\n"
+        prompt += (
+            f"For a business doing: ###{self.description}###\n"
+            if self.description
+            else ""
+        )
+        prompt += (
+            f'With these keywords: ###{", ".join(self.keywords)}###\n'
+            if self.keywords
+            else ""
+        )
+        prompt += f"In style: ###{self.style}###\n" if self.style else ""
+        prompt += (
+            f"With a randomness of: {self.randomness}\n" if self.randomness else ""
+        )
+        prompt += (
+            f"With a minimum length of: {self.min_domain_length}\n"
+            if self.min_domain_length
+            else ""
+        )
+        prompt += (
+            f"With a maximum length of: {self.max_domain_length}\n"
+            if self.max_domain_length
+            else ""
+        )
+        prompt += (
+            f'Words, prefixes or suffixes that should be included: {", ".join(self.included_words)}\n'
+            if self.included_words
+            else ""
+        )
         prompt += f'Consider these tlds: {", ".join(self.tlds)}\n' if self.tlds else ""
-        prompt += f'DO NOT suggest these domains: {", ".join(self.reviewed_domains)}\n' if self.reviewed_domains else ""
+        prompt += (
+            f'DO NOT suggest these domains: {", ".join(self.reviewed_domains)}\n'
+            if self.reviewed_domains
+            else ""
+        )
 
         functions = [
             {
@@ -69,41 +101,42 @@ class DomainNameGenerator:
                                 "properties": {
                                     "domain": {
                                         "type": "string",
-                                        "description": "The suggested domain without the tld"
+                                        "description": "The suggested domain without the tld",
                                     },
                                     "tld": {
                                         "type": "string",
-                                        "description": "The best tld for this domain"
+                                        "description": "The best tld for this domain",
                                     },
                                     "explain": {
                                         "type": "string",
-                                        "description": "A justification for why this domain is a good suggestion"
+                                        "description": "A justification for why this domain is a good suggestion",
                                     },
                                     "logo_description": {
                                         "type": "string",
-                                        "description": "A description of the logo of the domain for image generation"
-                                    }
+                                        "description": "A description of the logo of the domain for image generation",
+                                    },
                                 },
                                 "required": [
                                     "domain",
                                     "explain",
                                     "tld",
-                                    "logo_description"
-                                ]
-                            }
+                                    "logo_description",
+                                ],
+                            },
                         }
                     },
-                    "required": ["domains"]
-                }
+                    "required": ["domains"],
+                },
             }
         ]
 
         response, function_args = self.openai_utils.send_function_chat_completion(
-            prompt, functions)
+            prompt, functions
+        )
         if response is None or function_args is None:
             print("Error: Received None from send_function_chat_completion")
             return [], []
-        return response, function_args['domains']
+        return response, function_args["domains"]
 
     def check_domain_availability(self, domain):
         """
@@ -117,7 +150,9 @@ class DomainNameGenerator:
         """
         return DomainChecker.domain_exists(domain)
 
-    def save_input_output_to_json(self, inputs, domain_results, raw_response, filename="domain_results.json"):
+    def save_input_output_to_json(
+        self, inputs, domain_results, raw_response, filename="domain_results.json"
+    ):
         """
         Saves the input parameters and the domain results to a JSON file.
         If the file already exists, append the new results to the existing array.
@@ -130,16 +165,14 @@ class DomainNameGenerator:
         """
         data = []
         if os.path.exists(filename):
-            with open(filename, 'r') as f:
+            with open(filename, "r") as f:
                 data = json.load(f)
 
-        data.append({
-            "inputs": inputs,
-            "results": domain_results,
-            "raw_response": raw_response
-        })
+        data.append(
+            {"inputs": inputs, "results": domain_results, "raw_response": raw_response}
+        )
 
-        with open(filename, 'w') as f:
+        with open(filename, "w") as f:
             json.dump(data, f, indent=4)
 
     def run(self):
@@ -159,7 +192,7 @@ class DomainNameGenerator:
             "min_domain_length": self.min_domain_length,
             "max_domain_length": self.max_domain_length,
             "included_words": self.included_words,
-            "tlds": self.tlds
+            "tlds": self.tlds,
         }
 
         raw_response, generated_domains = self.generate_names()
@@ -168,21 +201,28 @@ class DomainNameGenerator:
         raw_domain_results = []
         # TODO: Check if the domain is available for each tld and add the tld to the domain
         for suggestion in generated_domains:
-            for tld in (self.tlds or ['com']):
+            for tld in self.tlds or ["com"]:
                 domain = f'{suggestion["domain"]}.{tld}'
                 if self.check_domains:
                     exists = self.check_domain_availability(domain)
                 else:
                     exists = None
                 formatted_domain = DomainFormatter.format_domain(
-                    domain, tld, suggestion["explain"], suggestion["logo_description"])
+                    domain,
+                    tld,
+                    suggestion["explain"],
+                    suggestion["logo_description"],
+                    exists,
+                )
                 domain_results.append(formatted_domain)
-                raw_domain_results.append({
-                    "domain": domain,
-                    "explain": suggestion["explain"],
-                    "exists": exists,
-                    "logo_description": suggestion["logo_description"]
-                })
+                raw_domain_results.append(
+                    {
+                        "domain": domain,
+                        "explain": suggestion["explain"],
+                        "exists": exists,
+                        "logo_description": suggestion["logo_description"],
+                    }
+                )
 
         # TODO: Check if domain result lengt is less than 10, re-run the generator for the missing domains.
         self.save_input_output_to_json(inputs, domain_results, raw_response)
