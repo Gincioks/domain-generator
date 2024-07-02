@@ -48,7 +48,8 @@ To set up the development environment for this application, it is recommended to
 
 6. **Start the Application**:
 
-   - Once the container is up and running, you can start the application using the following commands:
+   - Once the container is up and running, you can start the application using the following commands
+     (in new terminal in case if .dev configuration terminal is still left):
 
      ```bash
      # In one terminal, start the backend
@@ -78,6 +79,22 @@ Swagger documentation for the API can be accessed at `http://localhost:8000/docs
 - Qwen-7B-Instruct with 8bit quantization works the best, but slow(tested on Macbook M2 16GB). Sometimes giving wrong response, but fine-tuning should fix that.
 - Qwen2-7B-Instruct with 4bit quantization mostly gives missing required properties in function call and only one domain name at the time.
 - Qwen2-1.5B-Instruct in fp16 is close to Qwen-7B-Instruct in terms of performance and quality. But mostly missing required properties in function call.
+
+## Screenshots
+
+![Naming Style](images/naming_style.png)
+
+![Randomness](images/randomness.png)
+
+![Brand Info](images/brand_info.png)
+
+![Optional Settings](images/optional_settings.png)
+
+![Generating](images/generating.png)
+
+![Results](images/results.png)
+
+![Domain Details](images/domain_details.png)
 
 ## Troubleshooting
 
