@@ -84,7 +84,7 @@ class DomainNameGenerator:
         prompt += (
             f'DO NOT suggest these domains: {", ".join(self.reviewed_domains)}\n'
             if self.reviewed_domains
-            else ""
+            else "google.com, facebook.com, twitter.com, instagram.com, linkedin.com, youtube.com, wikipedia.org"
         )
 
         functions = [

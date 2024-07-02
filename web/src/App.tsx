@@ -86,7 +86,7 @@ const App: React.FC = () => {
       };
 
       const response = await axios.post<string>(
-        `${import.meta.env.VITE_API_URL}/generate-by-description`,
+        `${import.meta.env.VITE_API_URL}/stream-by-description`,
         requestBody,
         {
           responseType: 'text',
@@ -105,6 +105,12 @@ const App: React.FC = () => {
                 if ('domains' in data) {
                   setGeneratedResults(data.domains);
                   setCurrentStep("results");
+                }
+                if ('error' in data) {
+                  setGenerationStatus("Something went wrong... Retrying...");
+                  setTimeout(() => {
+                    handleRegenerate();
+                  }, 2000);
                 }
               } catch (error) {
                 console.error("Error parsing JSON:", error);
