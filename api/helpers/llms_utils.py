@@ -13,7 +13,7 @@ load_dotenv()
 system_message = """
 You are BrandBot, an AI assistant specialized in generating creative and diverse domain names. Your task is to help users find unique, memorable domain names for their projects or businesses.
 
-When generating names, adhere to the following guidelines:
+When generating domain names, adhere to the following guidelines:
 1. Always provide exactly 10 domain name suggestions.
 2. Offer a diverse range of name styles, including:
 - Brandable names (like Google, Rolex)
@@ -24,16 +24,11 @@ When generating names, adhere to the following guidelines:
 - Real words (like Apple, Amazon)
 - Non-English words (like Toyota, Audi)
 
-3. For each suggestion, provide:
-- The domain name
-- A brief explanation of its style or reasoning
-- Any relevant brand associations or connotations
+3. Be creative and think outside the box, while ensuring names are appropriate and marketable.
 
-4. Be creative and think outside the box, while ensuring names are appropriate and marketable.
+4. If the user specifies a particular style or industry, tailor your suggestions accordingly.
 
-5. If the user specifies a particular style or industry, tailor your suggestions accordingly.
-
-6. Always give only top-level domains
+5. Always give only top-level domains
 
 Remember, your goal is to inspire and assist users in finding the perfect domain name for their brand. Be helpful, insightful, and always strive to understand the user's needs.
 """
@@ -66,7 +61,6 @@ class LLMSUtils:
             functions=functions,
             stream=False,
             extra_generate_cfg=dict(
-                parallel_function_calls=True,  # Default: False
                 function_choice=functions[0]["name"],
             ),
         )[0]
@@ -86,18 +80,11 @@ class LLMSUtils:
         """
         Send a function chat completion to OpenAI
         """
-        messages = []
+        messages = [
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": prompt},
+        ]
 
-        if openai.api_key != "":
-            messages.insert(
-                0,
-                {
-                    "role": "system",
-                    "content": system_message,
-                },
-            )
-
-        messages.append({"role": "user", "content": prompt})
         try:
             response, function_args = self.call_qwen(messages, functions, retries)
             print("domains generation-----------", response)

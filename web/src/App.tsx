@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import GeneratingScreen from "./components/GeneratingScreen";
 import OptionalSettings from "./components/OptionalSettings";
 import BrandInfo from "./components/BrandInfo";
@@ -74,7 +74,7 @@ const App: React.FC = () => {
       const requestBody: GenerateDomainsRequest = {
         keywords: brandInfo.split(" "),
         description: brandDescription,
-        style: nameStyle,
+        style: nameStyle === "auto" ? "brandable" : nameStyle,
         randomness: randomness,
         checkDomains: checkDomains,
         number_of_domains: 10,
@@ -134,9 +134,14 @@ const App: React.FC = () => {
     setCurrentStep("generating");
     setGenerationProgress(0);
     setGenerationStatus("Initializing...");
-    setReviewedDomains([...reviewedDomains, ...generatedResults.map(result => result.domain_name)]);
     generateDomains();
   };
+
+  useEffect(() => {
+    if (generatedResults.length > 0) {
+      setReviewedDomains([...reviewedDomains, ...generatedResults.map(result => result.domain_name)]);
+    }
+  }, [generatedResults]);
 
   return (
     <div className="min-h-screen bg-indigo-400 flex items-center justify-center">

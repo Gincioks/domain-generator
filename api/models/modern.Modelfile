@@ -1,7 +1,7 @@
 FROM qwen2:7b-instruct-q8_0
 
 # Set temperature for balanced creativity and coherence
-PARAMETER temperature 0.9
+PARAMETER temperature 1
 PARAMETER num_ctx 32000
 
 # Set the system message

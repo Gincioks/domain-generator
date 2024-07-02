@@ -90,7 +90,7 @@ class DomainNameGenerator:
         functions = [
             {
                 "name": "suggest_domains",
-                "description": "Suggests a list of domains that fits the above criteria",
+                "description": "Suggests a list of 10 domains that fits the above criteria",
                 "parameters": {
                     "type": "object",
                     "properties": {
