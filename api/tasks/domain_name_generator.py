@@ -84,7 +84,7 @@ class DomainNameGenerator:
         prompt += (
             f'DO NOT suggest these domains: {", ".join(self.reviewed_domains)}\n'
             if self.reviewed_domains
-            else "google.com, facebook.com, twitter.com, instagram.com, linkedin.com, youtube.com, wikipedia.org"
+            else "google.com, facebook.com, twitter.com, instagram.com, linkedin.com"
         )
 
         functions = [
@@ -105,7 +105,7 @@ class DomainNameGenerator:
                                     },
                                     "tld": {
                                         "type": "string",
-                                        "description": "The best tld for this domain",
+                                        "description": "The best tld",
                                     },
                                     "explain": {
                                         "type": "string",
@@ -125,7 +125,7 @@ class DomainNameGenerator:
                             },
                         }
                     },
-                    "required": ["domains"],
+                    "required": ["wordLevels"],
                 },
             }
         ]
@@ -202,7 +202,10 @@ class DomainNameGenerator:
         # TODO: Check if the domain is available for each tld and add the tld to the domain
         for suggestion in generated_domains:
             for tld in self.tlds or ["com"]:
-                domain = f'{suggestion["domain"]}.{tld}'
+                if f".{tld}" not in suggestion["domain"]:
+                    domain = f'{suggestion["domain"]}.{tld}'
+                else:
+                    domain = suggestion["domain"]
                 if self.check_domains:
                     exists = self.check_domain_availability(domain)
                 else:

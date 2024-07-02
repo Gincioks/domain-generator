@@ -1,0 +1,2978 @@
+[
+    {
+        "inputs": {
+            "keywords": [
+                "tech",
+                "innovation",
+                "startup"
+            ],
+            "style": "modern",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "A platform for innovative tech startups.",
+            "reviewed_domains": [],
+            "min_domain_length": 8,
+            "max_domain_length": 15,
+            "included_words": [
+                "innovate",
+                "hub"
+            ],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "InnovateHubForStartups.com",
+                "domain_tld": "com",
+                "explain": "Combining 'innovate', 'hub', and 'startups' emphasizes the platform's role in fostering innovation among startups.",
+                "logo_description": "A modern, dynamic logo with a tech-inspired cityscape",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "StartUpTechNexus.com",
+                "domain_tld": "com",
+                "explain": "Suggests a nexus where technology and startup culture converge for mutual growth through innovation.",
+                "logo_description": "An intersection of digital and physical elements, representing the blend of tech and start-ups",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "InnovateTechGrowthSpot.com",
+                "domain_tld": "com",
+                "explain": "Signifies an area or location where innovative technology drives startup growth and success.",
+                "logo_description": "A lighted globe with a central point emitting rays symbolizing innovation",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "TechStartUpVanguard.com",
+                "domain_tld": "com",
+                "explain": "Describes the cutting-edge position of tech startups on the forefront of innovation.",
+                "logo_description": "An advanced city skyline with high-tech elements piercing the sky",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "InnovateStartUpOasis.com",
+                "domain_tld": "com",
+                "explain": "Imagines a supportive environment for tech startups in which they can thrive through innovative practices.",
+                "logo_description": "A futuristic oasis with digital palm trees and waterfalls of information",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "TechInnovationLaunchPad.com",
+                "domain_tld": "com",
+                "explain": "Suggests this platform as the initial step for tech startups to launch into a world of innovation.",
+                "logo_description": "A rocket blasting off from a tech-themed runway",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "StartUpInnovateCity.com",
+                "domain_tld": "com",
+                "explain": "Conveys an urban environment that encourages and nurtures technological innovation in the startup scene.",
+                "logo_description": "A cityscape with buildings transformed into circuit boards, powered by glowing energy",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "TechGrowthStartUpHub.com",
+                "domain_tld": "com",
+                "explain": "Reflects a central meeting point where tech and startup growth intersect through innovation.",
+                "logo_description": "An overlapping pattern of geometric shapes representing interconnected systems",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "InnovateStartupHavenCity.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes a city-like setting that provides a haven for technology-driven startups to innovate and thrive together.",
+                "logo_description": "A vibrant urban scene with tech icons intermixed into the architecture",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "TechInnovationCentralPark.com",
+                "domain_tld": "com",
+                "explain": "Imagines an open, inviting space where innovative ideas in technology and startup culture flourish.",
+                "logo_description": "An abstract representation of a park transformed by digital elements like trees with glowing circuits",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"InnovateTechHub\", \"tld\": \"com\", \"explain\": \"A modern name that combines 'innovate', 'tech', and 'hub' to create a memorable platform for tech startups.\", \"logo_description\": \"A futuristic, circular logo with 'ITH' initials in bold fonts\"}, {\"domain\": \"StartupInnovateSpace\", \"tld\": \"com\", \"explain\": \"Combining 'startup', 'innovate', and the spatial concept suggests a place where innovation can thrive.\", \"logo_description\": \"A clean design featuring a planet with interconnected circuit lines\"}, {\"domain\": \"TechInnovatorsGrowth\", \"tld\": \"com\", \"explain\": \"Reflects growth through technological innovation, making it ideal for a platform supporting tech startups.\", \"logo_description\": \"A logo of a tree growing from the ground with leaves shaped like circuit boards\"}, {\"domain\": \"HubForTechInnovation\", \"tld\": \"com\", \"explain\": \"Signifies a central meeting place for technology and innovation in the startup world.\", \"logo_description\": \"An interconnected series of gears forming a hub with a lightning bolt\"}, {\"domain\": \"InnovateStartUpCentral\", \"tld\": \"com\", \"explain\": \"Emphasizes 'innovate' and 'start-up', suggesting a key location for these entities to connect and thrive.\", \"logo_description\": \"A modern city skyline with tech icons floating above it\"}, {\"domain\": \"TechGrowthInnovate\", \"tld\": \"com\", \"explain\": \"Suggests growth through technological innovation, targeting startups in a modern, evolving market.\", \"logo_description\": \"A stylized rocket blasting off with circuitry around its sides\"}, {\"domain\": \"StartUpInnovateZone\", \"tld\": \"com\", \"explain\": \"Conveys the idea of a zone where tech and innovative startup activities occur.\", \"logo_description\": \"An abstract representation of an industrial city with glowing tech elements\"}, {\"domain\": \"TechStartupNexus\", \"tld\": \"com\", \"explain\": \"Reflects a nexus or meeting point for tech-driven startups, highlighting their connection through innovation.\", \"logo_description\": \"A fusion of interlocking circuit boards and geometric shapes forming a symbol\"}, {\"domain\": \"InnovateStartUpHaven\", \"tld\": \"com\", \"explain\": \"Suggests a safe and nurturing environment for tech startups to flourish with innovation at its core.\", \"logo_description\": \"An eco-friendly, futuristic landscape with trees made of glowing tech components\"}, {\"domain\": \"TechInnovationHotspot\", \"tld\": \"com\", \"explain\": \"Highlights the importance of technological innovation in creating high-growth and exciting startup opportunities.\", \"logo_description\": \"A pulsating globe with layers of interconnected circuits forming a network\"}], \"domains\": [{\"domain\": \"InnovateHubForStartups\", \"tld\": \"com\", \"explain\": \"Combining 'innovate', 'hub', and 'startups' emphasizes the platform's role in fostering innovation among startups.\", \"logo_description\": \"A modern, dynamic logo with a tech-inspired cityscape\"}, {\"domain\": \"StartUpTechNexus\", \"tld\": \"com\", \"explain\": \"Suggests a nexus where technology and startup culture converge for mutual growth through innovation.\", \"logo_description\": \"An intersection of digital and physical elements, representing the blend of tech and start-ups\"}, {\"domain\": \"InnovateTechGrowthSpot\", \"tld\": \"com\", \"explain\": \"Signifies an area or location where innovative technology drives startup growth and success.\", \"logo_description\": \"A lighted globe with a central point emitting rays symbolizing innovation\"}, {\"domain\": \"TechStartUpVanguard\", \"tld\": \"com\", \"explain\": \"Describes the cutting-edge position of tech startups on the forefront of innovation.\", \"logo_description\": \"An advanced city skyline with high-tech elements piercing the sky\"}, {\"domain\": \"InnovateStartUpOasis\", \"tld\": \"com\", \"explain\": \"Imagines a supportive environment for tech startups in which they can thrive through innovative practices.\", \"logo_description\": \"A futuristic oasis with digital palm trees and waterfalls of information\"}, {\"domain\": \"TechInnovationLaunchPad\", \"tld\": \"com\", \"explain\": \"Suggests this platform as the initial step for tech startups to launch into a world of innovation.\", \"logo_description\": \"A rocket blasting off from a tech-themed runway\"}, {\"domain\": \"StartUpInnovateCity\", \"tld\": \"com\", \"explain\": \"Conveys an urban environment that encourages and nurtures technological innovation in the startup scene.\", \"logo_description\": \"A cityscape with buildings transformed into circuit boards, powered by glowing energy\"}, {\"domain\": \"TechGrowthStartUpHub\", \"tld\": \"com\", \"explain\": \"Reflects a central meeting point where tech and startup growth intersect through innovation.\", \"logo_description\": \"An overlapping pattern of geometric shapes representing interconnected systems\"}, {\"domain\": \"InnovateStartupHavenCity\", \"tld\": \"com\", \"explain\": \"Emphasizes a city-like setting that provides a haven for technology-driven startups to innovate and thrive together.\", \"logo_description\": \"A vibrant urban scene with tech icons intermixed into the architecture\"}, {\"domain\": \"TechInnovationCentralPark\", \"tld\": \"com\", \"explain\": \"Imagines an open, inviting space where innovative ideas in technology and startup culture flourish.\", \"logo_description\": \"An abstract representation of a park transformed by digital elements like trees with glowing circuits\"}]}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexorPro.com",
+                "domain_tld": "com",
+                "explain": "This name combines the core aspect of the service (Nexor) with a suggestive term ('Pro') implying professionalism and excellence. It's short, memorable and brandable.",
+                "logo_description": "A modern, sleek robot design reflecting AI innovation, sitting against a gradient background",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexorPro\", \"tld\": \"com\", \"explain\": \"This name combines the core aspect of the service (Nexor) with a suggestive term ('Pro') implying professionalism and excellence. It's short, memorable and brandable.\", \"logo_description\": \"A modern, sleek robot design reflecting AI innovation, sitting against a gradient background\"}], \"type\": \"object\"}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorPro.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexorBoost.com.com",
+                "domain_tld": "com",
+                "explain": "Combining 'Nexor' with 'Boost', suggesting increased efficiency and productivity.",
+                "logo_description": "A dynamic icon featuring a lightning bolt intertwined with gears, symbolizing rapid productivity enhancement.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIProductivity.com.com",
+                "domain_tld": "com",
+                "explain": "Clearly highlighting the focus on AI-driven improvements in productivity.",
+                "logo_description": "An illustration of a digital assistant holding up a clock, emphasizing time-saving capabilities through technology.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientOps.com.com",
+                "domain_tld": "com",
+                "explain": "Directly addressing operational efficiency with an emphasis on 'efficient ops'.",
+                "logo_description": "A streamlined machine silhouette with the phrase 'Efficient Ops' in bold font, symbolizing streamlined processes.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexorBrain.com.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes Nexor as a thinking entity or a powerful AI tool for processing information.",
+                "logo_description": "A stylized brain icon with 'NexorBrain' in sleek type, representing an intelligent system enhancing decision-making.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostAIOps.com.com",
+                "domain_tld": "com",
+                "explain": "Combines the concepts of boosting and operations through AI technology.",
+                "logo_description": "An amalgamation of a forward arrow and machinery parts, indicating advancements in operational efficiency through artificial intelligence.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProductivityUp.com.com",
+                "domain_tld": "com",
+                "explain": "Highlights the idea of elevating productivity levels with Nexor's assistance.",
+                "logo_description": "A graphic displaying upward arrows symbolizing growth, coupled with 'Productivity Up', suggesting improved performance.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexorFlow.com.com",
+                "domain_tld": "com",
+                "explain": "Portrays Nexor guiding a smooth flow in work processes or data management.",
+                "logo_description": "Water flowing through pipes or circuits with the words 'Nexor Flow' in dynamic text, symbolizing seamless operation.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIBoostOps.com.com",
+                "domain_tld": "com",
+                "explain": "Reflects the AI-driven boost to operational efficiency.",
+                "logo_description": "A fusion of a lightning bolt and machine gears, signifying rapid enhancements to workflows through advanced technology.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientAI.com.com",
+                "domain_tld": "com",
+                "explain": "Directly focuses on using AI for increasing efficiency in various contexts.",
+                "logo_description": "An illustration featuring an AI robot holding a balance scale with 'Efficient AI' inscribed, representing smart optimization of tasks.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProductiveNexor.com.com",
+                "domain_tld": "com",
+                "explain": "Brings together 'productivity' and the brand name Nexor in a straightforward manner.",
+                "logo_description": "A graphic with an office clock alongside 'Productive Nexor', emphasizing productivity gains through automation.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexorBoost.com\", \"explain\": \"Combining 'Nexor' with 'Boost', suggesting increased efficiency and productivity.\", \"tld\": \"com\", \"logo_description\": \"A dynamic icon featuring a lightning bolt intertwined with gears, symbolizing rapid productivity enhancement.\"}, {\"domain\": \"AIProductivity.com\", \"explain\": \"Clearly highlighting the focus on AI-driven improvements in productivity.\", \"tld\": \"com\", \"logo_description\": \"An illustration of a digital assistant holding up a clock, emphasizing time-saving capabilities through technology.\"}, {\"domain\": \"EfficientOps.com\", \"explain\": \"Directly addressing operational efficiency with an emphasis on 'efficient ops'.\", \"tld\": \"com\", \"logo_description\": \"A streamlined machine silhouette with the phrase 'Efficient Ops' in bold font, symbolizing streamlined processes.\"}, {\"domain\": \"NexorBrain.com\", \"explain\": \"Emphasizes Nexor as a thinking entity or a powerful AI tool for processing information.\", \"tld\": \"com\", \"logo_description\": \"A stylized brain icon with 'NexorBrain' in sleek type, representing an intelligent system enhancing decision-making.\"}, {\"domain\": \"BoostAIOps.com\", \"explain\": \"Combines the concepts of boosting and operations through AI technology.\", \"tld\": \"com\", \"logo_description\": \"An amalgamation of a forward arrow and machinery parts, indicating advancements in operational efficiency through artificial intelligence.\"}, {\"domain\": \"ProductivityUp.com\", \"explain\": \"Highlights the idea of elevating productivity levels with Nexor's assistance.\", \"tld\": \"com\", \"logo_description\": \"A graphic displaying upward arrows symbolizing growth, coupled with 'Productivity Up', suggesting improved performance.\"}, {\"domain\": \"NexorFlow.com\", \"explain\": \"Portrays Nexor guiding a smooth flow in work processes or data management.\", \"tld\": \"com\", \"logo_description\": \"Water flowing through pipes or circuits with the words 'Nexor Flow' in dynamic text, symbolizing seamless operation.\"}, {\"domain\": \"AIBoostOps.com\", \"explain\": \"Reflects the AI-driven boost to operational efficiency.\", \"tld\": \"com\", \"logo_description\": \"A fusion of a lightning bolt and machine gears, signifying rapid enhancements to workflows through advanced technology.\"}, {\"domain\": \"EfficientAI.com\", \"explain\": \"Directly focuses on using AI for increasing efficiency in various contexts.\", \"tld\": \"com\", \"logo_description\": \"An illustration featuring an AI robot holding a balance scale with 'Efficient AI' inscribed, representing smart optimization of tasks.\"}, {\"domain\": \"ProductiveNexor.com\", \"explain\": \"Brings together 'productivity' and the brand name Nexor in a straightforward manner.\", \"tld\": \"com\", \"logo_description\": \"A graphic with an office clock alongside 'Productive Nexor', emphasizing productivity gains through automation.\"}]}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexorFlow.com",
+                "domain_tld": "com",
+                "explain": "A brandable domain name that conveys the essence of Nexor being a flow enhancer for productivity and operations.",
+                "logo_description": "An abstract logo representing efficiency, advanced technology, and fluid movement.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficiencyHub.com",
+                "domain_tld": "com",
+                "explain": "Reflects the primary function of Nexor in creating an efficient environment through tailored recommendations.",
+                "logo_description": "A stylized gear with flowing lines symbolizing optimization and advancement.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexorBoost.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes the power and effectiveness of Nexor in enhancing productivity, using a brandable term for impact.",
+                "logo_description": "An upward-pointing arrow with dynamic elements to signify growth and improvement.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "SmartStreamAI.com",
+                "domain_tld": "com",
+                "explain": "Combines the concepts of smart technology (AI), streamlining processes, and Nexor's role as an AI chatbot.",
+                "logo_description": "A wave-like design intertwined with a smart device icon to depict seamless flow and integration.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "OpexBoostAI.com",
+                "domain_tld": "com",
+                "explain": "Synthesizes operations enhancement (opex), AI technology, and the functionality of Nexor in boosting performance.",
+                "logo_description": "A gear or cogwheel with an AI-inspired interface symbolizing optimization through automation.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexorFlow\", \"tld\": \"com\", \"explain\": \"A brandable domain name that conveys the essence of Nexor being a flow enhancer for productivity and operations.\", \"logo_description\": \"An abstract logo representing efficiency, advanced technology, and fluid movement.\"}, {\"domain\": \"EfficiencyHub\", \"tld\": \"com\", \"explain\": \"Reflects the primary function of Nexor in creating an efficient environment through tailored recommendations.\", \"logo_description\": \"A stylized gear with flowing lines symbolizing optimization and advancement.\"}, {\"domain\": \"NexorBoost\", \"tld\": \"com\", \"explain\": \"Emphasizes the power and effectiveness of Nexor in enhancing productivity, using a brandable term for impact.\", \"logo_description\": \"An upward-pointing arrow with dynamic elements to signify growth and improvement.\"}, {\"domain\": \"SmartStreamAI\", \"tld\": \"com\", \"explain\": \"Combines the concepts of smart technology (AI), streamlining processes, and Nexor's role as an AI chatbot.\", \"logo_description\": \"A wave-like design intertwined with a smart device icon to depict seamless flow and integration.\"}, {\"domain\": \"OpexBoostAI\", \"tld\": \"com\", \"explain\": \"Synthesizes operations enhancement (opex), AI technology, and the functionality of Nexor in boosting performance.\", \"logo_description\": \"A gear or cogwheel with an AI-inspired interface symbolizing optimization through automation.\"}], \"wordLevels\": 1}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorFlow.com",
+                "EfficiencyHub.com",
+                "NexorBoost.com",
+                "SmartStreamAI.com",
+                "OpexBoostAI.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexoSphere.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that captures the essence of Nexor's advanced AI capabilities and focus on enhancing productivity.",
+                "logo_description": "A logo with a combination of futuristic elements like circles, representing intelligence, and arrows indicating direction towards improvement.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProdPulseAI.com",
+                "domain_tld": "com",
+                "explain": "Culminates 'Productivity Pulse' which symbolizes the heartbeat of efficient operations.",
+                "logo_description": "A logo with a pulse design intertwined with gears to depict efficiency in motion.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "OptiNexus.com",
+                "domain_tld": "com",
+                "explain": "Synthesizing 'Optimization' and 'Nexus', this name highlights Nexor's role in optimizing connections and workflows.",
+                "logo_description": "A logo featuring interconnected rings symbolizing seamless integration and optimization.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientIQ.com",
+                "domain_tld": "com",
+                "explain": "Integrates 'efficiency' with 'IQ', indicating intelligence-driven operations for growth and productivity.",
+                "logo_description": "A logo with a blend of analytical tools and progress indicators to signify strategic improvement and data-driven efficiency.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "GrowthNexusAI.com",
+                "domain_tld": "com",
+                "explain": "Combines the essence of 'Growth' with Nexor's AI innovation, promising scalable solutions for productivity enhancement.",
+                "logo_description": "A logo that features a tree growing outwards to signify growth and an interconnected network.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexoSphere\", \"explain\": \"A brandable name that captures the essence of Nexor's advanced AI capabilities and focus on enhancing productivity.\", \"tld\": \"com\", \"logo_description\": \"A logo with a combination of futuristic elements like circles, representing intelligence, and arrows indicating direction towards improvement.\"}, {\"domain\": \"ProdPulseAI\", \"explain\": \"Culminates 'Productivity Pulse' which symbolizes the heartbeat of efficient operations.\", \"tld\": \"com\", \"logo_description\": \"A logo with a pulse design intertwined with gears to depict efficiency in motion.\"}, {\"domain\": \"OptiNexus\", \"explain\": \"Synthesizing 'Optimization' and 'Nexus', this name highlights Nexor's role in optimizing connections and workflows.\", \"tld\": \"com\", \"logo_description\": \"A logo featuring interconnected rings symbolizing seamless integration and optimization.\"}, {\"domain\": \"EfficientIQ\", \"explain\": \"Integrates 'efficiency' with 'IQ', indicating intelligence-driven operations for growth and productivity.\", \"tld\": \"com\", \"logo_description\": \"A logo with a blend of analytical tools and progress indicators to signify strategic improvement and data-driven efficiency.\"}, {\"domain\": \"GrowthNexusAI\", \"explain\": \"Combines the essence of 'Growth' with Nexor's AI innovation, promising scalable solutions for productivity enhancement.\", \"tld\": \"com\", \"logo_description\": \"A logo that features a tree growing outwards to signify growth and an interconnected network.\"}], \"wordLevels\": [{\"wordLevel\": 1}, {\"wordLevel\": 2}, {\"wordLevel\": 3}], \"randomness\": \"medium\"}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorFlow.com",
+                "EfficiencyHub.com",
+                "NexorBoost.com",
+                "SmartStreamAI.com",
+                "OpexBoostAI.com",
+                "NexoSphere.com",
+                "ProdPulseAI.com",
+                "OptiNexus.com",
+                "EfficientIQ.com",
+                "GrowthNexusAI.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "ProdNex.com",
+                "domain_tld": "com",
+                "explain": "A strong brandable name that combines productivity with the Nexor brand.",
+                "logo_description": "The logo features a dynamic image of gears spinning, symbolizing the enhancement and efficiency.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientNexo.com",
+                "domain_tld": "com",
+                "explain": "This name offers a unique spin on 'efficient' and 'nexor,' providing an engaging and memorable domain.",
+                "logo_description": "A clean and modern logo featuring interconnected elements of technology and productivity, reflecting the synergy between Nexor and efficiency.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostNexoTech.com",
+                "domain_tld": "com",
+                "explain": "This brandable name suggests a technological advancement in boosting processes with Nexor's capabilities.",
+                "logo_description": "A futuristic logo design that integrates gears and lightning bolts to symbolize rapid enhancements through technology.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexorEffiGenius.com",
+                "domain_tld": "com",
+                "explain": "A creative brandable name that highlights the efficiency enhancement provided by Nexor while sounding innovative.",
+                "logo_description": "The logo combines a sleek, geometric shape with lightning bolt elements to convey intelligence and speed.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexoTechBoost.com",
+                "domain_tld": "com",
+                "explain": "Combines 'nexo' with a tech-oriented prefix, offering an appealing name for Nexor's tech-driven solutions.",
+                "logo_description": "A logo design with interconnected circuit board shapes, emphasizing the technological innovation and efficiency.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostNexoAI.com",
+                "domain_tld": "com",
+                "explain": "This name focuses on boosting operations through AI-enhanced services offered by Nexor.",
+                "logo_description": "A logo incorporating a dynamic gear system combined with an AI symbol, highlighting the focus on enhancing operations with AI.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "TechNexorBoost.com",
+                "domain_tld": "com",
+                "explain": "This brandable name emphasizes the technological aspect of Nexor's services while emphasizing their boosting capabilities.",
+                "logo_description": "A modern and minimalist design featuring a stylized 'T' combined with lightning bolt elements, representing technology-driven advancements.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexoBoostGenius.com",
+                "domain_tld": "com",
+                "explain": "This name suggests an extraordinary enhancement provided by Nexor in terms of boosting efficiency.",
+                "logo_description": "The logo combines the 'nexo' element with a stylized brain icon and lightning bolt, emphasizing innovation.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIProdNexo.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that focuses on AI-enhanced productivity through Nexor's solutions.",
+                "logo_description": "An innovative logo design featuring a futuristic gear combined with an AI icon to represent the fusion of technology and productivity.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostTechNexo.com",
+                "domain_tld": "com",
+                "explain": "This name combines boosting with tech-focused branding, reflecting Nexor's role in enhancing efficiency through technological solutions.",
+                "logo_description": "A logo design using a sleek gear combined with futuristic lines to symbolize the integration of technology and efficiency.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"ProdNex\", \"tld\": \"com\", \"explain\": \"A strong brandable name that combines productivity with the Nexor brand.\", \"logo_description\": \"The logo features a dynamic image of gears spinning, symbolizing the enhancement and efficiency.\"}, {\"domain\": \"EfficientNexo\", \"tld\": \"com\", \"explain\": \"This name offers a unique spin on 'efficient' and 'nexor,' providing an engaging and memorable domain.\", \"logo_description\": \"A clean and modern logo featuring interconnected elements of technology and productivity, reflecting the synergy between Nexor and efficiency.\"}, {\"domain\": \"BoostNexoTech\", \"tld\": \"com\", \"explain\": \"This brandable name suggests a technological advancement in boosting processes with Nexor's capabilities.\", \"logo_description\": \"A futuristic logo design that integrates gears and lightning bolts to symbolize rapid enhancements through technology.\"}, {\"domain\": \"NexorEffiGenius\", \"tld\": \"com\", \"explain\": \"A creative brandable name that highlights the efficiency enhancement provided by Nexor while sounding innovative.\", \"logo_description\": \"The logo combines a sleek, geometric shape with lightning bolt elements to convey intelligence and speed.\"}, {\"domain\": \"NexoTechBoost\", \"tld\": \"com\", \"explain\": \"Combines 'nexo' with a tech-oriented prefix, offering an appealing name for Nexor's tech-driven solutions.\", \"logo_description\": \"A logo design with interconnected circuit board shapes, emphasizing the technological innovation and efficiency.\"}, {\"domain\": \"BoostNexoAI\", \"tld\": \"com\", \"explain\": \"This name focuses on boosting operations through AI-enhanced services offered by Nexor.\", \"logo_description\": \"A logo incorporating a dynamic gear system combined with an AI symbol, highlighting the focus on enhancing operations with AI.\"}, {\"domain\": \"TechNexorBoost\", \"tld\": \"com\", \"explain\": \"This brandable name emphasizes the technological aspect of Nexor's services while emphasizing their boosting capabilities.\", \"logo_description\": \"A modern and minimalist design featuring a stylized 'T' combined with lightning bolt elements, representing technology-driven advancements.\"}, {\"domain\": \"NexoBoostGenius\", \"tld\": \"com\", \"explain\": \"This name suggests an extraordinary enhancement provided by Nexor in terms of boosting efficiency.\", \"logo_description\": \"The logo combines the 'nexo' element with a stylized brain icon and lightning bolt, emphasizing innovation.\"}, {\"domain\": \"AIProdNexo\", \"tld\": \"com\", \"explain\": \"A brandable name that focuses on AI-enhanced productivity through Nexor's solutions.\", \"logo_description\": \"An innovative logo design featuring a futuristic gear combined with an AI icon to represent the fusion of technology and productivity.\"}, {\"domain\": \"BoostTechNexo\", \"tld\": \"com\", \"explain\": \"This name combines boosting with tech-focused branding, reflecting Nexor's role in enhancing efficiency through technological solutions.\", \"logo_description\": \"A logo design using a sleek gear combined with futuristic lines to symbolize the integration of technology and efficiency.\"}], \"wordLevels\": [\"brandable\"], \"type\": 1}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorFlow.com",
+                "EfficiencyHub.com",
+                "NexorBoost.com",
+                "SmartStreamAI.com",
+                "OpexBoostAI.com",
+                "NexoSphere.com",
+                "ProdPulseAI.com",
+                "OptiNexus.com",
+                "EfficientIQ.com",
+                "GrowthNexusAI.com",
+                "ProdNex.com",
+                "EfficientNexo.com",
+                "BoostNexoTech.com",
+                "NexorEffiGenius.com",
+                "NexoTechBoost.com",
+                "BoostNexoAI.com",
+                "TechNexorBoost.com",
+                "NexoBoostGenius.com",
+                "AIProdNexo.com",
+                "BoostTechNexo.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "ProductiveAI.com.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that suggests the focus on productivity and artificial intelligence.",
+                "logo_description": "An abstract logo of 'Productive' written in a modern sans-serif font, with AI represented by overlapping triangles in shades of blue and green.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientlyAI.com.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that emphasizes efficiency through the use of natural language and AI.",
+                "logo_description": "The word 'Efficiently' in a clean, geometric sans-serif font with AI symbolized by binary code elements woven into the text.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "StreamlineAI.com.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that highlights the automation and organization capabilities of AI.",
+                "logo_description": "A minimalist design featuring 'Streamline' in a bold, sans-serif typeface with an AI icon as a stylized wave.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexorAI.com.com",
+                "domain_tld": "com",
+                "explain": "The name Nexor is already mentioned in the description. This name retains it but adds AI to directly connect the brand.",
+                "logo_description": "A contemporary logo combining the 'N' and 'x' from Nexor with an AI icon, featuring overlapping circles in shades of blue and orange.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostAI.com.com",
+                "domain_tld": "com",
+                "explain": "This name directly suggests that the service helps to enhance performance and efficiency through AI.",
+                "logo_description": "An energetic logo for BoostAI with a vibrant green 'B' overlaid on a pulsating geometric shape, representing growth and innovation in technology.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"ProductiveAI.com\", \"tld\": \"com\", \"explain\": \"A brandable name that suggests the focus on productivity and artificial intelligence.\", \"logo_description\": \"An abstract logo of 'Productive' written in a modern sans-serif font, with AI represented by overlapping triangles in shades of blue and green.\"}, {\"domain\": \"EfficientlyAI.com\", \"tld\": \"com\", \"explain\": \"A brandable name that emphasizes efficiency through the use of natural language and AI.\", \"logo_description\": \"The word 'Efficiently' in a clean, geometric sans-serif font with AI symbolized by binary code elements woven into the text.\"}, {\"domain\": \"StreamlineAI.com\", \"tld\": \"com\", \"explain\": \"A brandable name that highlights the automation and organization capabilities of AI.\", \"logo_description\": \"A minimalist design featuring 'Streamline' in a bold, sans-serif typeface with an AI icon as a stylized wave.\"}, {\"domain\": \"NexorAI.com\", \"tld\": \"com\", \"explain\": \"The name Nexor is already mentioned in the description. This name retains it but adds AI to directly connect the brand.\", \"logo_description\": \"A contemporary logo combining the 'N' and 'x' from Nexor with an AI icon, featuring overlapping circles in shades of blue and orange.\"}, {\"domain\": \"BoostAI.com\", \"tld\": \"com\", \"explain\": \"This name directly suggests that the service helps to enhance performance and efficiency through AI.\", \"logo_description\": \"An energetic logo for BoostAI with a vibrant green 'B' overlaid on a pulsating geometric shape, representing growth and innovation in technology.\"}], \"wordLevels\": {\"domains\": [{\"lengths\": [1, 2], \"type\": \"brandable\"}, {\"lengths\": [3, 4], \"type\": \"evocative\"}, {\"lengths\": [5, 8], \"type\": \"compound\"}, {\"lengths\": [9, 20], \"type\": \"short_phrase\"}]}}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorFlow.com",
+                "EfficiencyHub.com",
+                "NexorBoost.com",
+                "SmartStreamAI.com",
+                "OpexBoostAI.com",
+                "NexoSphere.com",
+                "ProdPulseAI.com",
+                "OptiNexus.com",
+                "EfficientIQ.com",
+                "GrowthNexusAI.com",
+                "ProdNex.com",
+                "EfficientNexo.com",
+                "BoostNexoTech.com",
+                "NexorEffiGenius.com",
+                "NexoTechBoost.com",
+                "BoostNexoAI.com",
+                "TechNexorBoost.com",
+                "NexoBoostGenius.com",
+                "AIProdNexo.com",
+                "BoostTechNexo.com",
+                "ProductiveAI.com.com",
+                "EfficientlyAI.com.com",
+                "StreamlineAI.com.com",
+                "NexorAI.com.com",
+                "BoostAI.com.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "InnoBoost.com",
+                "domain_tld": "com",
+                "explain": "Short and brandable with a catchy sound, 'InnoBoost' evokes innovation and growth. The name is memorable and straightforward.",
+                "logo_description": "A graphic that combines an innovative shape with a boost symbol",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"InnoBoost\", \"tld\": \"com\", \"explain\": \"Short and brandable with a catchy sound, 'InnoBoost' evokes innovation and growth. The name is memorable and straightforward.\", \"logo_description\": \"A graphic that combines an innovative shape with a boost symbol\"}], \"wordLevels\": [\"brandable\"], \"randomnessLevel\": \"medium\", \"minLength\": 1, \"maxLength\": 20, \"tlds\": [\"com\"], \"excludedDomains\": []}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "NexorFlow.com",
+                "EfficiencyHub.com",
+                "NexorBoost.com",
+                "SmartStreamAI.com",
+                "OpexBoostAI.com",
+                "NexoSphere.com",
+                "ProdPulseAI.com",
+                "OptiNexus.com",
+                "EfficientIQ.com",
+                "GrowthNexusAI.com",
+                "ProdNex.com",
+                "EfficientNexo.com",
+                "BoostNexoTech.com",
+                "NexorEffiGenius.com",
+                "NexoTechBoost.com",
+                "BoostNexoAI.com",
+                "TechNexorBoost.com",
+                "NexoBoostGenius.com",
+                "AIProdNexo.com",
+                "BoostTechNexo.com",
+                "ProductiveAI.com.com",
+                "EfficientlyAI.com.com",
+                "StreamlineAI.com.com",
+                "NexorAI.com.com",
+                "BoostAI.com.com",
+                "InnoBoost.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexorFlow.com",
+                "domain_tld": "com",
+                "explain": "Strong brand association with the keywords 'Nexor' and 'Flow', suggesting a smooth experience.",
+                "logo_description": "A futuristic logo featuring the NexorFlow name, symbolizing efficiency and flow",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIStreamline.com",
+                "domain_tld": "com",
+                "explain": "Combines 'AI' for technology and 'Streamline' to emphasize efficiency, aligning with the business focus.",
+                "logo_description": "An image of a sleek AI system guiding smooth processes",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficiencyAI.com",
+                "domain_tld": "com",
+                "explain": "Directly relates to enhancing efficiency using advanced AI technology.",
+                "logo_description": "A symbol of AI and optimization for better performance",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostIQAI.com",
+                "domain_tld": "com",
+                "explain": "Reflects the intention to boost intelligence, performance, and productivity through AI.",
+                "logo_description": "An innovative image suggesting intelligence enhancement with AI",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexoDrive.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes forward motion and progress within professional operations.",
+                "logo_description": "A driving force symbol featuring NexoDrive name for innovation and development",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProdBoostAI.com",
+                "domain_tld": "com",
+                "explain": "Focuses on productivity enhancements through AI technology.",
+                "logo_description": "An image of a system pushing for increased productivity with AI",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "SmartNexoAI.com",
+                "domain_tld": "com",
+                "explain": "Combines 'Smart' for intelligence and 'Nexo', indicating smart solutions powered by AI.",
+                "logo_description": "A smart device featuring the SmartNexoAI name for intuitive technology",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIBoostSphere.com",
+                "domain_tld": "com",
+                "explain": "Suggests a spherical concept of enhancing AI with rapid boosts in performance.",
+                "logo_description": "An illustration of an efficient and evolving sphere with AI boost",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EffiNexoTech.com",
+                "domain_tld": "com",
+                "explain": "A blend of 'Effi', for efficiency, and 'Nexo' technology.",
+                "logo_description": "A symbol of technological advancement towards efficiency in Nexo's context",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "OptimumAI.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes the best or optimal results achievable through AI.",
+                "logo_description": "An image representing top-notch performance with AI",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexorFlow\", \"tld\": \"com\", \"explain\": \"Strong brand association with the keywords 'Nexor' and 'Flow', suggesting a smooth experience.\", \"logo_description\": \"A futuristic logo featuring the NexorFlow name, symbolizing efficiency and flow\"}, {\"domain\": \"AIStreamline\", \"tld\": \"com\", \"explain\": \"Combines 'AI' for technology and 'Streamline' to emphasize efficiency, aligning with the business focus.\", \"logo_description\": \"An image of a sleek AI system guiding smooth processes\"}, {\"domain\": \"EfficiencyAI\", \"tld\": \"com\", \"explain\": \"Directly relates to enhancing efficiency using advanced AI technology.\", \"logo_description\": \"A symbol of AI and optimization for better performance\"}, {\"domain\": \"BoostIQAI\", \"tld\": \"com\", \"explain\": \"Reflects the intention to boost intelligence, performance, and productivity through AI.\", \"logo_description\": \"An innovative image suggesting intelligence enhancement with AI\"}, {\"domain\": \"NexoDrive\", \"tld\": \"com\", \"explain\": \"Emphasizes forward motion and progress within professional operations.\", \"logo_description\": \"A driving force symbol featuring NexoDrive name for innovation and development\"}, {\"domain\": \"ProdBoostAI\", \"tld\": \"com\", \"explain\": \"Focuses on productivity enhancements through AI technology.\", \"logo_description\": \"An image of a system pushing for increased productivity with AI\"}, {\"domain\": \"SmartNexoAI\", \"tld\": \"com\", \"explain\": \"Combines 'Smart' for intelligence and 'Nexo', indicating smart solutions powered by AI.\", \"logo_description\": \"A smart device featuring the SmartNexoAI name for intuitive technology\"}, {\"domain\": \"AIBoostSphere\", \"tld\": \"com\", \"explain\": \"Suggests a spherical concept of enhancing AI with rapid boosts in performance.\", \"logo_description\": \"An illustration of an efficient and evolving sphere with AI boost\"}, {\"domain\": \"EffiNexoTech\", \"tld\": \"com\", \"explain\": \"A blend of 'Effi', for efficiency, and 'Nexo' technology.\", \"logo_description\": \"A symbol of technological advancement towards efficiency in Nexo's context\"}, {\"domain\": \"OptimumAI\", \"tld\": \"com\", \"explain\": \"Emphasizes the best or optimal results achievable through AI.\", \"logo_description\": \"An image representing top-notch performance with AI\"}], \"wordLevels\": [\"medium\"]}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "NexorBoost.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that emphasizes the boost Nexor provides to productivity and efficiency.",
+                "logo_description": "A dynamic logo featuring a robot with a lightning bolt, symbolizing speed and innovation.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficiencyAI.com",
+                "domain_tld": "com",
+                "explain": "Reflects the AI-driven focus on improving efficiency through tailored recommendations.",
+                "logo_description": "An AI icon overlaying gears to represent streamlined operations enhanced by technology.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "SmartOpsMaster.com",
+                "domain_tld": "com",
+                "explain": "A strong brand name suggesting mastery over business operations with intelligence.",
+                "logo_description": "A stylized gear combined with a light bulb symbolizing innovation and insight.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProductivityProgeny.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes the cutting-edge nature of Nexor in enhancing productivity.",
+                "logo_description": "An image of a seed sprouting into an advanced computer system, representing growth through technology.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostAI21.com",
+                "domain_tld": "com",
+                "explain": "Reflects modernity and innovation with '21' likely representing 2021 or a year of major advancements.",
+                "logo_description": "An AI icon with a futuristic clock symbolizing progress in the new millennium.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EffiTechNexor.com",
+                "domain_tld": "com",
+                "explain": "Combines efficiency, technology, and Nexor to highlight its role as a tech-driven productivity enhancer.",
+                "logo_description": "A fusion of an AI icon and technical circuitry symbols representing advanced innovation in operations.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "OpptimizerAI.com",
+                "domain_tld": "com",
+                "explain": "Suggests maximizing potential through AI-driven optimizations.",
+                "logo_description": "A stylized lightning bolt intersecting with a gear to symbolize rapid improvement of efficiency.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProductivityPal.com",
+                "domain_tld": "com",
+                "explain": "An approachable, friendly name that suggests Nexor acts as your helpful companion in boosting productivity.",
+                "logo_description": "An image of a smiling robot holding out a hand with gears, conveying support and assistance.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficiencyElevate.com",
+                "domain_tld": "com",
+                "explain": "Highlights the capability to elevate efficiency through Nexor's AI-driven solutions.",
+                "logo_description": "A gear being lifted upward by an AI icon, symbolizing advancement in operation efficiency.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIEnhancerPro.com",
+                "domain_tld": "com",
+                "explain": "Indicates a professional-grade tool for enhancing operations with AI technology.",
+                "logo_description": "An image of a wrench and screwdriver surrounded by a halo to represent professional precision enhanced by advanced technologies.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"NexorBoost\", \"explain\": \"A brandable name that emphasizes the boost Nexor provides to productivity and efficiency.\", \"tld\": \"com\", \"logo_description\": \"A dynamic logo featuring a robot with a lightning bolt, symbolizing speed and innovation.\"}, {\"domain\": \"EfficiencyAI\", \"explain\": \"Reflects the AI-driven focus on improving efficiency through tailored recommendations.\", \"tld\": \"com\", \"logo_description\": \"An AI icon overlaying gears to represent streamlined operations enhanced by technology.\"}, {\"domain\": \"SmartOpsMaster\", \"explain\": \"A strong brand name suggesting mastery over business operations with intelligence.\", \"tld\": \"com\", \"logo_description\": \"A stylized gear combined with a light bulb symbolizing innovation and insight.\"}, {\"domain\": \"ProductivityProgeny\", \"explain\": \"Emphasizes the cutting-edge nature of Nexor in enhancing productivity.\", \"tld\": \"com\", \"logo_description\": \"An image of a seed sprouting into an advanced computer system, representing growth through technology.\"}, {\"domain\": \"BoostAI21\", \"explain\": \"Reflects modernity and innovation with '21' likely representing 2021 or a year of major advancements.\", \"tld\": \"com\", \"logo_description\": \"An AI icon with a futuristic clock symbolizing progress in the new millennium.\"}, {\"domain\": \"EffiTechNexor\", \"explain\": \"Combines efficiency, technology, and Nexor to highlight its role as a tech-driven productivity enhancer.\", \"tld\": \"com\", \"logo_description\": \"A fusion of an AI icon and technical circuitry symbols representing advanced innovation in operations.\"}, {\"domain\": \"OpptimizerAI\", \"explain\": \"Suggests maximizing potential through AI-driven optimizations.\", \"tld\": \"com\", \"logo_description\": \"A stylized lightning bolt intersecting with a gear to symbolize rapid improvement of efficiency.\"}, {\"domain\": \"ProductivityPal\", \"explain\": \"An approachable, friendly name that suggests Nexor acts as your helpful companion in boosting productivity.\", \"tld\": \"com\", \"logo_description\": \"An image of a smiling robot holding out a hand with gears, conveying support and assistance.\"}, {\"domain\": \"EfficiencyElevate\", \"explain\": \"Highlights the capability to elevate efficiency through Nexor's AI-driven solutions.\", \"tld\": \"com\", \"logo_description\": \"A gear being lifted upward by an AI icon, symbolizing advancement in operation efficiency.\"}, {\"domain\": \"AIEnhancerPro\", \"explain\": \"Indicates a professional-grade tool for enhancing operations with AI technology.\", \"tld\": \"com\", \"logo_description\": \"An image of a wrench and screwdriver surrounded by a halo to represent professional precision enhanced by advanced technologies.\"}], \"wordLevels\": [\"brandable\"], \"randomness\": 5, \"minLength\": 1, \"maxLength\": 20, \"tlds\": [\"com\"], \"baseDomains\": [], \"extensions\": []}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "Nexor.com",
+                "domain_tld": "com",
+                "explain": "This brandable domain name emphasizes the cutting-edge AI chatbot's function and utility.",
+                "logo_description": "A sleek, futuristic design with elements of communication to represent Nexor\u2019s role in enhancing efficiency.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"Nexor\", \"tld\": \"com\", \"explain\": \"This brandable domain name emphasizes the cutting-edge AI chatbot's function and utility.\", \"logo_description\": \"A sleek, futuristic design with elements of communication to represent Nexor\u2019s role in enhancing efficiency.\"}], \"wordLevels\": [1]}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "Nexor.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "ElevateAI.com",
+                "domain_tld": "com",
+                "explain": "This domain is memorable and easy to remember, embodying the idea of enhancing AI for productivity. It's concise with a catchy play on words.",
+                "logo_description": "A sleek, stylized letter 'E' in blue, representing elevating technology.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProGuideChat.com",
+                "domain_tld": "com",
+                "explain": "With 'Pro' implying professionalism and 'GuideChat' suggesting guidance through AI, it's both catchy and relevant.",
+                "logo_description": "A professional-looking guidebook with a speech bubble pointing at the book in blue, indicating advice through technology.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientAIBoost.com",
+                "domain_tld": "com",
+                "explain": "It combines efficiency, AI, and boosting to provide a clear value proposition for potential users. It's straightforward yet compelling.",
+                "logo_description": "A green bar graph with an upward arrow, symbolizing growth and improvement through AI.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "OptiNexAI.com",
+                "domain_tld": "com",
+                "explain": "Using 'Opti' to suggest optimization, this domain highlights Nexor\u2019s capability in making processes more efficient. It's catchy and brand-aligned.",
+                "logo_description": "A blue circular diagram with an arrow leading towards the center, indicating optimization for efficiency.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexifyNow.com",
+                "domain_tld": "com",
+                "explain": "It combines 'Nexor' with 'now', suggesting instant access or immediate results from its service. It's catchy and straightforward.",
+                "logo_description": "A blue lightning bolt, symbolizing quickness and speed of service.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"ElevateAI\", \"explain\": \"This domain is memorable and easy to remember, embodying the idea of enhancing AI for productivity. It's concise with a catchy play on words.\", \"tld\": \"com\", \"logo_description\": \"A sleek, stylized letter 'E' in blue, representing elevating technology.\"}, {\"domain\": \"ProGuideChat\", \"explain\": \"With 'Pro' implying professionalism and 'GuideChat' suggesting guidance through AI, it's both catchy and relevant.\", \"tld\": \"com\", \"logo_description\": \"A professional-looking guidebook with a speech bubble pointing at the book in blue, indicating advice through technology.\"}, {\"domain\": \"EfficientAIBoost\", \"explain\": \"It combines efficiency, AI, and boosting to provide a clear value proposition for potential users. It's straightforward yet compelling.\", \"tld\": \"com\", \"logo_description\": \"A green bar graph with an upward arrow, symbolizing growth and improvement through AI.\"}, {\"domain\": \"OptiNexAI\", \"explain\": \"Using 'Opti' to suggest optimization, this domain highlights Nexor\u2019s capability in making processes more efficient. It's catchy and brand-aligned.\", \"tld\": \"com\", \"logo_description\": \"A blue circular diagram with an arrow leading towards the center, indicating optimization for efficiency.\"}, {\"domain\": \"NexifyNow\", \"explain\": \"It combines 'Nexor' with 'now', suggesting instant access or immediate results from its service. It's catchy and straightforward.\", \"tld\": \"com\", \"logo_description\": \"A blue lightning bolt, symbolizing quickness and speed of service.\"}]}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "Nexor.com",
+                "ElevateAI.com",
+                "ProGuideChat.com",
+                "EfficientAIBoost.com",
+                "OptiNexAI.com",
+                "NexifyNow.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "CleverEfficiency.com",
+                "domain_tld": "com",
+                "explain": "Combines cleverness with efficiency to create a memorable brandable domain.",
+                "logo_description": "A stylized letter 'C' overlaying an image of gears turning, suggesting innovation and productivity.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "SmartNexis.com",
+                "domain_tld": "com",
+                "explain": "Brings together intelligence and Nexor's focus on AI, making it distinct yet brandable.",
+                "logo_description": "An illustration featuring a futuristic cityscape with a robotic figure carrying a digital book, representing smart and innovative knowledge.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BoostlyAI.com",
+                "domain_tld": "com",
+                "explain": "High-energy combination of 'boost' and AI, making it an exciting and brandable domain.",
+                "logo_description": "A design of an upward-pointing arrow inside a circle, symbolizing growth and advancement with a robot character in the background.",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "AIProMover.com",
+                "domain_tld": "com",
+                "explain": "Suggests movement towards progress with AI's power, creating a unique brandable name.",
+                "logo_description": "A graphic of an arrow with 'AI' on one side and 'ProMover' on the other, showing direction and professional advancement.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "QuicklyNex.com",
+                "domain_tld": "com",
+                "explain": "Reflects Nexor's speed and efficiency with a short and catchy brandable name.",
+                "logo_description": "A simple graphic of two arrows facing each other, representing quick action and collaboration.",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"CleverEfficiency.com\", \"explain\": \"Combines cleverness with efficiency to create a memorable brandable domain.\", \"tld\": \".com\", \"logo_description\": \"A stylized letter 'C' overlaying an image of gears turning, suggesting innovation and productivity.\"}, {\"domain\": \"SmartNexis.com\", \"explain\": \"Brings together intelligence and Nexor's focus on AI, making it distinct yet brandable.\", \"tld\": \".com\", \"logo_description\": \"An illustration featuring a futuristic cityscape with a robotic figure carrying a digital book, representing smart and innovative knowledge.\"}, {\"domain\": \"BoostlyAI.com\", \"explain\": \"High-energy combination of 'boost' and AI, making it an exciting and brandable domain.\", \"tld\": \".com\", \"logo_description\": \"A design of an upward-pointing arrow inside a circle, symbolizing growth and advancement with a robot character in the background.\"}, {\"domain\": \"AIProMover.com\", \"explain\": \"Suggests movement towards progress with AI's power, creating a unique brandable name.\", \"tld\": \".com\", \"logo_description\": \"A graphic of an arrow with 'AI' on one side and 'ProMover' on the other, showing direction and professional advancement.\"}, {\"domain\": \"QuicklyNex.com\", \"explain\": \"Reflects Nexor's speed and efficiency with a short and catchy brandable name.\", \"tld\": \".com\", \"logo_description\": \"A simple graphic of two arrows facing each other, representing quick action and collaboration.\"}], \"wordLevels\": 1}"
+            }
+        }
+    },
+    {
+        "inputs": {
+            "keywords": [
+                ""
+            ],
+            "style": "brandable",
+            "randomness": "medium",
+            "number_of_domains": 10,
+            "description": "Nexor is a cutting-edge AI chatbot that delivers tailored recommendations to boost your productivity and streamline operations. Utilizing advanced natural language processing, Nexor understands your queries and provides precise, relevant responses. Perfect for enhancing efficiency in various professional environments.",
+            "reviewed_domains": [
+                "Nexor.com",
+                "ElevateAI.com",
+                "ProGuideChat.com",
+                "EfficientAIBoost.com",
+                "OptiNexAI.com",
+                "NexifyNow.com",
+                "CleverEfficiency.com",
+                "SmartNexis.com",
+                "BoostlyAI.com",
+                "AIProMover.com",
+                "QuicklyNex.com"
+            ],
+            "min_domain_length": 1,
+            "max_domain_length": 20,
+            "included_words": [],
+            "tlds": [
+                "com"
+            ]
+        },
+        "results": [
+            {
+                "domain_name": "BrainBoostAIly.com",
+                "domain_tld": "com",
+                "explain": "A brandable name that suggests an AI solution enhancing cognitive functions for productivity.",
+                "logo_description": "An icon of a brain with a digital pulse representing boosted intelligence",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "ProNexoEfficiency.com",
+                "domain_tld": "com",
+                "explain": "Focuses on professional efficiency powered by AI, combining 'pro' for expertise and 'nexo' for advancement.",
+                "logo_description": "A design showing an expert hand guiding an AI avatar through a digital flowchart",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "SwiftAIProMover.com",
+                "domain_tld": "com",
+                "explain": "Emphasizes swift action in professional settings, combined with 'pro', suggesting expertise and the concept of 'nex' for advancement.",
+                "logo_description": "An illustration featuring an AI figure running over a trail of documents with arrows pointing towards efficiency",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexoMentorAI.com",
+                "domain_tld": "com",
+                "explain": "A brandable name combining mentorship qualities with AI technology, suggesting guidance and learning-driven advancements.",
+                "logo_description": "An image of an AI avatar wearing glasses with a lightbulb and book, symbolizing wisdom and educational AI",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "BrainAIlyBoosted.com",
+                "domain_tld": "com",
+                "explain": "Focuses on AI capabilities that boost intelligence, combined with 'brain' for human-like understanding.",
+                "logo_description": "A design of a digital avatar wearing a crown with a light beam representing advanced cognitive abilities and intelligence",
+                "exists": false,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "NexoQuickPro.ai.com",
+                "domain_tld": "com",
+                "explain": "Combines 'nexo' for advancement, quick action through the domain's suffix, suggesting agile and swift solutions.",
+                "logo_description": "An icon of an AI figure running with a lightning bolt background representing speed and efficiency",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            },
+            {
+                "domain_name": "EfficientNexoBoost.ai.com",
+                "domain_tld": "com",
+                "explain": "Highlights 'nexo' for innovation combined with efficient functionality and the '.ai' suffix suggesting AI-driven services.",
+                "logo_description": "A design featuring an AI avatar with a progress meter under its feet, symbolizing efficiency and growth",
+                "exists": true,
+                "label": {
+                    "text": null,
+                    "class": null
+                },
+                "restriction": null,
+                "product": {
+                    "product_slug": "domain:.com",
+                    "price": {
+                        "old": 14.99,
+                        "purchase": 4.99,
+                        "discount": 66,
+                        "billing_period": {
+                            "period": 1,
+                            "period_unit": "year"
+                        }
+                    },
+                    "addons": {
+                        "privacy_protection": true
+                    }
+                },
+                "tooltip": null,
+                "multi_year_deal": true
+            }
+        ],
+        "raw_response": {
+            "role": "assistant",
+            "content": "",
+            "function_call": {
+                "name": "suggest_domains",
+                "arguments": "{\"domains\": [{\"domain\": \"GuruBrain.com\", \"explain\": \"This brandable domain combines the concepts of a guru and a brain, suggesting knowledge and intelligence. It's suitable for AI chatbot services.\", \"tld\": \"com\", \"logo_description\": \"A depiction of a wise person's head with a glowing aura representing knowledge and wisdom\"}], \"domains\": [{\"domain\": \"QuickNexBot.com\", \"explain\": \"This domain is concise, catchy, and includes the keywords 'quick' and 'nex', emphasizing speed and advancement in technology.\", \"tld\": \"com\", \"logo_description\": \"A stylized AI chatbot figure running fast with a lightning bolt representing speed and innovation\"}], \"domains\": [{\"domain\": \"BrainPaceAI.com\", \"explain\": \"This domain focuses on the brain's connection to intelligence, complemented by 'pace' suggesting efficient performance. Ideal for an AI-driven productivity tool.\", \"tld\": \"com\", \"logo_description\": \"An image of a lightning-fast thought process in the shape of a brain\"}], \"domains\": [{\"domain\": \"SwiftNexAI.com\", \"explain\": \"A brandable name with 'swift' implying quick responses and 'nex', suggesting connection or progression.\", \"tld\": \"com\", \"logo_description\": \"A logo featuring a fast-moving AI bot with arrows indicating advancement\"}, {\"domain\": \"NexoLogic.com\", \"explain\": \"Combines the focus on AI ('nexo') with 'logic', representing reasoning and decision-making processes.\", \"tld\": \"com\", \"logo_description\": \"An illustration of a digital circuit with thought bubbles suggesting logical processing\"}, {\"domain\": \"EfficientNexBot.com\", \"explain\": \"Emphasizes efficiency alongside 'nex' for advancement, making it ideal for an AI-driven productivity tool.\", \"tld\": \"com\", \"logo_description\": \"A stylized image of an efficient, streamlined chatbot with a progress meter\"}, {\"domain\": \"SmartBrainBoostAI.com\", \"explain\": \"Focuses on the combination of intelligence and AI, suggesting an intelligent solution that boosts efficiency.\", \"tld\": \"com\", \"logo_description\": \"An illustration featuring a smart brain icon with lightning bolts symbolizing intelligence and innovation\"}, {\"domain\": \"ProdaiNex.com\", \"explain\": \"A brandable name combining 'prodai' for productivity-focused AI and 'nex', suggesting advancement in technology.\", \"tld\": \"com\", \"logo_description\": \"A design showcasing an AI avatar holding a productivity chart with arrows indicating growth\"}, {\"domain\": \"IntelliNexoAI.com\", \"explain\": \"Brings together intelligence and the concept of nex, emphasizing advanced decision-making capabilities.\", \"tld\": \"com\", \"logo_description\": \"An icon showing an intelligent AI character with a lightbulb representing insight and knowledge\"}], \"domains\": [{\"domain\": \"QuicklyProAI.com\", \"explain\": \"A straightforward brandable name highlighting quick action in the context of professional AI services.\", \"tld\": \"com\", \"logo_description\": \"A logo depicting a lightning bolt above an expert AI figure\"}, {\"domain\": \"NexoMoverAI.com\", \"explain\": \"Combines 'nexo' for advancement, 'mover' suggesting agility and versatility in moving through tasks.\", \"tld\": \"com\", \"logo_description\": \"An illustration of an agile AI bot with gears representing efficiency and dynamic movement\"}, {\"domain\": \"EffortlessNexBotAI.com\", \"explain\": \"Focuses on effortless functionality alongside 'nex', emphasizing ease in AI-driven solutions.\", \"tld\": \"com\", \"logo_description\": \"A design featuring a digital avatar holding out hands symbolizing ease and accessibility\"}, {\"domain\": \"SmartBrainEaseAI.com\", \"explain\": \"Emphasizes the concept of smart brains making things easy, highlighting user-friendly AI services.\", \"tld\": \"com\", \"logo_description\": \"An image of a smiling brain icon with a light beam emanating to represent simplicity and ease\"}, {\"domain\": \"NexoSavvyAI.com\", \"explain\": \"Combines 'nexo' for progress and 'savvy', suggesting expertise and smart solutions.\", \"tld\": \"com\", \"logo_description\": \"An illustration of an AI character wearing a smartwatch with data points, symbolizing advanced knowledge and efficiency\"}], \"domains\": [{\"domain\": \"BrainBoostAIly.com\", \"explain\": \"A brandable name that suggests an AI solution enhancing cognitive functions for productivity.\", \"tld\": \"com\", \"logo_description\": \"An icon of a brain with a digital pulse representing boosted intelligence\"}, {\"domain\": \"ProNexoEfficiency.com\", \"explain\": \"Focuses on professional efficiency powered by AI, combining 'pro' for expertise and 'nexo' for advancement.\", \"tld\": \"com\", \"logo_description\": \"A design showing an expert hand guiding an AI avatar through a digital flowchart\"}, {\"domain\": \"SwiftAIProMover.com\", \"explain\": \"Emphasizes swift action in professional settings, combined with 'pro', suggesting expertise and the concept of 'nex' for advancement.\", \"tld\": \"com\", \"logo_description\": \"An illustration featuring an AI figure running over a trail of documents with arrows pointing towards efficiency\"}, {\"domain\": \"NexoMentorAI.com\", \"explain\": \"A brandable name combining mentorship qualities with AI technology, suggesting guidance and learning-driven advancements.\", \"tld\": \"com\", \"logo_description\": \"An image of an AI avatar wearing glasses with a lightbulb and book, symbolizing wisdom and educational AI\"}, {\"domain\": \"BrainAIlyBoosted.com\", \"explain\": \"Focuses on AI capabilities that boost intelligence, combined with 'brain' for human-like understanding.\", \"tld\": \"com\", \"logo_description\": \"A design of a digital avatar wearing a crown with a light beam representing advanced cognitive abilities and intelligence\"}, {\"domain\": \"NexoQuickPro.ai\", \"explain\": \"Combines 'nexo' for advancement, quick action through the domain's suffix, suggesting agile and swift solutions.\", \"tld\": \"ai\", \"logo_description\": \"An icon of an AI figure running with a lightning bolt background representing speed and efficiency\"}, {\"domain\": \"EfficientNexoBoost.ai\", \"explain\": \"Highlights 'nexo' for innovation combined with efficient functionality and the '.ai' suffix suggesting AI-driven services.\", \"tld\": \"ai\", \"logo_description\": \"A design featuring an AI avatar with a progress meter under its feet, symbolizing efficiency and growth\"}]}"
+            }
+        }
+    }
+]
